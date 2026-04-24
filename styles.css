@@ -272,11 +272,15 @@ p  { margin: 0 0 1em; color: var(--ink-soft); }
   background: var(--ink);
   color: #fff;
 }
+.lang-modal__panel { max-width: 720px; }
 .lang-modal__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 8px;
   padding: 12px 20px 24px;
+}
+@media (max-width: 700px) {
+  .lang-modal__grid { grid-template-columns: 1fr 1fr; }
 }
 .lang-option {
   display: flex;
