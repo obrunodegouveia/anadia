@@ -85,19 +85,27 @@ function applyLang(lang) {
 }
 
 async function initI18n() {
-  await loadTranslations();
-  const lang = detectLang();
-  applyLang(lang);
+  const docLang = document.documentElement.lang;
+  const targetLang = detectLang();
+  // If the page is already statically rendered in the requested language,
+  // skip fetching i18n.json — saves ~28 KB on every PT page load.
+  if (docLang !== targetLang) {
+    await loadTranslations();
+    applyLang(targetLang);
+  } else {
+    document.querySelectorAll('.lang-switch__btn').forEach(b => {
+      b.classList.toggle('is-active', b.dataset.lang === targetLang);
+    });
+  }
   document.querySelectorAll('.lang-switch__btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const newLang = btn.dataset.lang;
       localStorage.setItem('lang', newLang);
-      // If the static page for this lang exists, navigate to it
       const target = I18N_PATH[newLang];
       if (target && target !== location.pathname) {
         location.href = target;
       } else {
-        applyLang(newLang);
+        loadTranslations().then(() => applyLang(newLang));
       }
     });
   });
@@ -146,6 +154,7 @@ let currentIdx = 0;
 function visible() {
   return items.filter(it => !it.classList.contains('is-hidden'));
 }
+const lbCounter = document.getElementById('lbCounter');
 function openAt(idx) {
   visibleItems = visible();
   currentIdx = (idx + visibleItems.length) % visibleItems.length;
@@ -155,6 +164,7 @@ function openAt(idx) {
   lbImg.src = img.src;
   lbImg.alt = img.alt || '';
   lbCap.textContent = cap ? cap.textContent : '';
+  if (lbCounter) lbCounter.textContent = `${currentIdx + 1} / ${visibleItems.length}`;
   lb.classList.add('is-open');
   document.body.style.overflow = 'hidden';
 }
@@ -176,3 +186,94 @@ document.addEventListener('keydown', e => {
   if (e.key === 'ArrowLeft')  openAt(currentIdx - 1);
   if (e.key === 'ArrowRight') openAt(currentIdx + 1);
 });
+
+// =================== Touch swipe in lightbox ===================
+let touchStartX = 0, touchStartY = 0;
+lb?.addEventListener('touchstart', e => {
+  touchStartX = e.changedTouches[0].clientX;
+  touchStartY = e.changedTouches[0].clientY;
+}, { passive: true });
+lb?.addEventListener('touchend', e => {
+  const dx = e.changedTouches[0].clientX - touchStartX;
+  const dy = e.changedTouches[0].clientY - touchStartY;
+  if (Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) {
+    if (dx > 0) openAt(currentIdx - 1);
+    else        openAt(currentIdx + 1);
+  }
+}, { passive: true });
+
+// =================== Scroll progress + back-to-top + sticky CTA ===================
+const progressBar = document.getElementById('scrollProgress');
+const backBtn     = document.getElementById('backToTop');
+const mobileCta   = document.getElementById('mobileCta');
+
+function onScroll() {
+  const doc = document.documentElement;
+  const max = doc.scrollHeight - doc.clientHeight;
+  const pct = max > 0 ? (doc.scrollTop / max) * 100 : 0;
+  if (progressBar) progressBar.style.width = pct + '%';
+
+  const past = doc.scrollTop > 600;
+  backBtn?.classList.toggle('is-visible', past);
+
+  // Show mobile CTA after first viewport, hide near the contact form (where the form already is)
+  const contact = document.getElementById('contact');
+  const contactTop = contact ? contact.getBoundingClientRect().top + window.scrollY : Infinity;
+  const nearContact = doc.scrollTop + doc.clientHeight > contactTop + 100;
+  mobileCta?.classList.toggle('is-visible', past && !nearContact);
+}
+window.addEventListener('scroll', onScroll, { passive: true });
+onScroll();
+
+backBtn?.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+// =================== Active nav section ===================
+const navAnchors = document.querySelectorAll('.nav__links a[href^="#"]');
+const sectionMap = new Map();
+navAnchors.forEach(a => {
+  const id = a.getAttribute('href').slice(1);
+  const sec = document.getElementById(id);
+  if (sec) sectionMap.set(sec, a);
+});
+if ('IntersectionObserver' in window && sectionMap.size) {
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(en => {
+      const link = sectionMap.get(en.target);
+      if (!link) return;
+      if (en.isIntersecting) {
+        navAnchors.forEach(l => l.classList.remove('is-active'));
+        link.classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px', threshold: 0 });
+  sectionMap.forEach((_, sec) => obs.observe(sec));
+}
+
+// =================== Dynamic gallery filter counts ===================
+function updateChipCounts() {
+  document.querySelectorAll('.gallery__filters .chip').forEach(chip => {
+    const cat = chip.dataset.filter;
+    const count = cat === 'all'
+      ? items.length
+      : items.filter(it => it.dataset.cat === cat).length;
+    let badge = chip.querySelector('span');
+    if (badge) badge.textContent = count;
+    else {
+      // For chips that don't have a count badge yet
+      badge = document.createElement('span');
+      badge.textContent = count;
+      chip.appendChild(document.createTextNode(' '));
+      chip.appendChild(badge);
+    }
+  });
+}
+updateChipCounts();
+
+// =================== Show form success after Formsubmit redirect ===================
+if (new URLSearchParams(location.search).get('sent') === '1') {
+  const success = document.getElementById('contactSuccess');
+  if (success) {
+    success.hidden = false;
+    success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+}

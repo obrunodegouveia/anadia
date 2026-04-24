@@ -228,6 +228,7 @@
     "foot.lc1": "Request details",
     "foot.lc2": "WhatsApp",
     "foot.lc3": "Live Airbnb listing",
+    "foot.lc4": "Download brochure (PDF)",
     "foot.disc": "Information provided is indicative — verify with full documentation before purchase."
   },
   "pt": {
@@ -459,6 +460,7 @@
     "foot.lc1": "Pedir informação",
     "foot.lc2": "WhatsApp",
     "foot.lc3": "Anúncio no Airbnb",
+    "foot.lc4": "Descarregar brochura (PDF)",
     "foot.disc": "Informação indicativa — verifique a documentação completa antes da compra."
   }
 }

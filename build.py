@@ -13,12 +13,12 @@ I18N = json.loads((ROOT / 'i18n.json').read_text(encoding='utf-8'))
 # Locale-specific overrides for <head> meta (not in i18n.json)
 META = {
     'pt': {
-        'title':       'Vila Anadia · Imóvel para Investimento à Venda · €790.000 | 13 Unidades + T3 do Proprietário | Anadia, Portugal',
-        'description': 'Imóvel para investimento à venda em Anadia, Portugal — €790.000. Edifício de 393 m² totalmente renovado para coliving e coworking: 13 unidades de arrendamento (suítes, T0, T1) mais um T3 privado do proprietário com terraço. Jardim, estacionamento, churrasqueira. Ideal para Airbnb, coliving ou investidor puro — yields até ~18%.',
-        'ogTitle':     'Viva em Portugal e Gere Rendimento — 13 Unidades + T3 do Proprietário | €790.000',
-        'ogDesc':      'Imóvel híbrido de coliving & coworking em Anadia, Portugal. 393 m², capacidade para 26 hóspedes, jardim + estacionamento. Yields até ~18%. Valor pedido €790.000.',
-        'twTitle':     'Imóvel para Investimento em Anadia — €790.000 | 13 Unidades + T3',
-        'twDesc':      'Edifício de 393 m² totalmente renovado para coliving & coworking em Anadia, Portugal. Yields até ~18%.',
+        'title':       'Imóvel para Investimento em Anadia, Portugal · €790.000 | Vila Anadia',
+        'description': 'Vila Anadia: imóvel de 393 m² para investimento em Anadia, Portugal. €790.000. 13 unidades de arrendamento + T3 privado, jardim, estacionamento. Rentabilidade até ~18%.',
+        'ogTitle':     'Vila Anadia · €790.000 — 13 Unidades + T3 do Proprietário em Anadia, Portugal',
+        'ogDesc':      'Imóvel de coliving & coworking em Anadia, Portugal. 393 m², 13 unidades + T3 do proprietário. Rentabilidade até ~18%.',
+        'twTitle':     'Vila Anadia · €790.000 — Anadia, Portugal',
+        'twDesc':      '13 unidades de arrendamento + T3 do proprietário no centro de Portugal. Rentabilidade até ~18%.',
         'ogLocale':    'pt_PT',
         'ogLocaleAlt': 'en_US',
         'ogImageAlt':  'Exterior do imóvel para investimento em Anadia, Portugal',
@@ -141,6 +141,7 @@ def build(lang: str, out_dir: pathlib.Path):
 
     # 1. Make all relative asset paths absolute (so they resolve from /pt/)
     src = re.sub(r'src="images/', 'src="/images/', src)
+    src = re.sub(r'srcset="images/', 'srcset="/images/', src)
     src = re.sub(r'href="styles\.css"', 'href="/styles.css"', src)
     src = re.sub(r'src="script\.js"', 'src="/script.js"', src)
 

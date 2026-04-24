@@ -235,7 +235,7 @@ p  { margin: 0 0 1em; color: var(--ink-soft); }
       rgba(251,248,243,0.92) 42%,
       rgba(251,248,243,0.55) 60%,
       rgba(251,248,243,0.20) 100%),
-    url("images/photo-44.jpg") center right / cover no-repeat,
+    url("images/photo-44.webp") center right / cover no-repeat,
     linear-gradient(180deg, #fbf8f3, #f6f0e4 100%);
   z-index: -1;
 }
@@ -246,7 +246,7 @@ p  { margin: 0 0 1em; color: var(--ink-soft); }
         rgba(251,248,243,0.92) 0%,
         rgba(251,248,243,0.85) 60%,
         rgba(251,248,243,0.92) 100%),
-      url("images/photo-44.jpg") center / cover no-repeat;
+      url("images/photo-44.webp") center / cover no-repeat;
   }
 }
 .hero__inner { max-width: 920px; }
@@ -1109,6 +1109,147 @@ p  { margin: 0 0 1em; color: var(--ink-soft); }
     display: inline-flex;
     margin: 16px 24px 0;
   }
+}
+
+/* ==================== SCROLL PROGRESS BAR ==================== */
+.scroll-progress {
+  position: fixed;
+  top: 0; left: 0;
+  height: 3px;
+  width: 0%;
+  background: linear-gradient(90deg, var(--accent), var(--accent-deep));
+  z-index: 60;
+  transition: width .08s linear;
+  pointer-events: none;
+}
+
+/* ==================== ACTIVE NAV ==================== */
+.nav__links a.is-active {
+  color: var(--ink);
+  position: relative;
+}
+.nav__links a.is-active::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; bottom: -22px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+/* ==================== BACK TO TOP ==================== */
+.back-to-top {
+  position: fixed;
+  right: 22px; bottom: 22px;
+  width: 46px; height: 46px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: #fff;
+  border: none;
+  display: grid; place-items: center;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition: opacity .25s ease, transform .25s ease, background .15s ease;
+  z-index: 55;
+  box-shadow: var(--shadow);
+}
+.back-to-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+.back-to-top:hover { background: #1a2a44; }
+
+/* ==================== STICKY MOBILE CTA ==================== */
+.mobile-cta {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  display: none;
+  gap: 8px;
+  padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+  background: rgba(255,255,255,0.96);
+  backdrop-filter: saturate(140%) blur(10px);
+  -webkit-backdrop-filter: saturate(140%) blur(10px);
+  border-top: 1px solid var(--line);
+  z-index: 50;
+  box-shadow: 0 -8px 24px rgba(15,27,45,.06);
+  transform: translateY(120%);
+  transition: transform .25s ease;
+}
+.mobile-cta.is-visible { transform: translateY(0); }
+.mobile-cta__btn {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 14px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: .92rem;
+  text-decoration: none;
+}
+.mobile-cta__btn--wa {
+  background: var(--whatsapp);
+  color: #fff;
+  flex: 0 0 auto;
+  padding: 12px 16px;
+}
+.mobile-cta__btn--wa svg { color: #fff; }
+.mobile-cta__btn--primary {
+  background: var(--ink);
+  color: #fff;
+}
+
+@media (max-width: 720px) {
+  .mobile-cta { display: flex; }
+  .back-to-top { bottom: 78px; }
+}
+
+/* ==================== REAL GOOGLE MAP ==================== */
+.location__map {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0;
+  height: 100%;
+  min-height: 420px;
+  position: relative;
+  overflow: hidden;
+}
+.location__map iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  border: 0;
+  display: block;
+}
+.location__map-link {
+  position: absolute;
+  bottom: 12px; right: 12px;
+  background: rgba(15,27,45,0.92);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: .8rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background .15s;
+}
+.location__map-link:hover { background: var(--ink); }
+
+/* ==================== LIGHTBOX COUNTER ==================== */
+.lightbox__counter {
+  position: absolute;
+  top: 24px; left: 24px;
+  color: rgba(255,255,255,0.7);
+  font-size: .85rem;
+  font-variant-numeric: tabular-nums;
+  background: rgba(0,0,0,0.4);
+  padding: 4px 10px;
+  border-radius: 999px;
 }
 
 /* ==================== UTIL / MOTION ==================== */
