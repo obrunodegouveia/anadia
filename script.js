@@ -2,15 +2,46 @@
 const I18N_LANGS = ['en', 'pt'];
 const I18N_DEFAULT = 'en';
 
+const I18N_PATH = { pt: '/pt/', en: '/' };
+
+function langFromPath() {
+  const p = location.pathname;
+  for (const lang of I18N_LANGS) {
+    if (lang === 'en') continue;
+    if (p === `/${lang}/` || p === `/${lang}` || p.startsWith(`/${lang}/`)) return lang;
+  }
+  return 'en';
+}
+
 function detectLang() {
+  // 1. URL path takes priority (we have static /pt/ pages)
+  const path = langFromPath();
+  if (path !== 'en' || location.pathname === '/' || location.pathname === '/index.html') {
+    // path tells us the right answer if we are on /pt/, or we are on root and English is the default
+    return path;
+  }
+  // 2. ?lang= query param (legacy)
   const url = new URLSearchParams(location.search).get('lang');
   if (url && I18N_LANGS.includes(url)) return url;
+  // 3. localStorage
   const stored = localStorage.getItem('lang');
   if (stored && I18N_LANGS.includes(stored)) return stored;
+  // 4. browser
   const browser = (navigator.language || 'en').slice(0, 2).toLowerCase();
   if (I18N_LANGS.includes(browser)) return browser;
   return I18N_DEFAULT;
 }
+
+// On root URL, redirect to the user's preferred language if it differs from default
+function maybeRedirectFromRoot() {
+  if (location.pathname !== '/' && location.pathname !== '/index.html') return;
+  if (new URLSearchParams(location.search).get('lang')) return; // user explicitly asked
+  const stored = localStorage.getItem('lang');
+  if (stored && stored !== 'en' && I18N_PATH[stored]) {
+    location.replace(I18N_PATH[stored]);
+  }
+}
+maybeRedirectFromRoot();
 
 let translations = null;
 
@@ -61,10 +92,13 @@ async function initI18n() {
     btn.addEventListener('click', () => {
       const newLang = btn.dataset.lang;
       localStorage.setItem('lang', newLang);
-      const url = new URL(location.href);
-      url.searchParams.set('lang', newLang);
-      history.replaceState(null, '', url);
-      applyLang(newLang);
+      // If the static page for this lang exists, navigate to it
+      const target = I18N_PATH[newLang];
+      if (target && target !== location.pathname) {
+        location.href = target;
+      } else {
+        applyLang(newLang);
+      }
     });
   });
 }
