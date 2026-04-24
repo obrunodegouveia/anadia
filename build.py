@@ -172,6 +172,42 @@ META = {
             'Close': 'Fermer', 'Previous': 'Précédent', 'Next': 'Suivant',
         },
     },
+    'ru': {
+        'title':       'Инвестиционная недвижимость в Анадии, Португалия · €790 000 | Vila Anadia',
+        'description': 'Vila Anadia: инвестиционный объект 393 м² в Анадии, Португалия. €790 000. 13 арендных юнитов + приватная T3, сад, паркинг. Доходность до ~18%.',
+        'ogTitle':     'Vila Anadia · €790 000 — 13 юнитов + T3 владельца в Анадии, Португалия',
+        'ogDesc':      'Объект коливинга и коворкинга в Анадии, Португалия. 393 м², 13 юнитов + T3 владельца. Доходность до ~18%.',
+        'twTitle':     'Vila Anadia · €790 000 — Анадия, Португалия',
+        'twDesc':      '13 арендных юнитов + T3 владельца в центре Португалии. Доходность до ~18%.',
+        'ogLocale':    'ru_RU',
+        'ogLocaleAlt': 'en_US',
+        'ogImageAlt':  'Внешний вид инвестиционной недвижимости в Анадии, Португалия',
+        'inLang':      'ru',
+        'imgAlts': {}, 'figcaptions': {}, 'aria': {
+            'Open menu': 'Открыть меню', 'Primary': 'Основное',
+            'Language': 'Язык', 'Gallery filters': 'Фильтры галереи',
+            'Photo viewer': 'Просмотр фото',
+            'Close': 'Закрыть', 'Previous': 'Назад', 'Next': 'Вперёд',
+        },
+    },
+    'uk': {
+        'title':       'Інвестиційна нерухомість в Анадії, Португалія · €790 000 | Vila Anadia',
+        'description': "Vila Anadia: інвестиційний об'єкт 393 м² в Анадії, Португалія. €790 000. 13 орендних юнітів + приватний T3, сад, паркінг. Дохідність до ~18%.",
+        'ogTitle':     'Vila Anadia · €790 000 — 13 юнітів + T3 власника в Анадії, Португалія',
+        'ogDesc':      "Об'єкт коліверу та коворкінгу в Анадії, Португалія. 393 м², 13 юнітів + T3 власника. Дохідність до ~18%.",
+        'twTitle':     'Vila Anadia · €790 000 — Анадія, Португалія',
+        'twDesc':      '13 орендних юнітів + T3 власника в центрі Португалії. Дохідність до ~18%.',
+        'ogLocale':    'uk_UA',
+        'ogLocaleAlt': 'en_US',
+        'ogImageAlt':  "Зовнішній вигляд інвестиційного об'єкта в Анадії, Португалія",
+        'inLang':      'uk',
+        'imgAlts': {}, 'figcaptions': {}, 'aria': {
+            'Open menu': 'Відкрити меню', 'Primary': 'Основне',
+            'Language': 'Мова', 'Gallery filters': 'Фільтри галереї',
+            'Photo viewer': 'Перегляд фото',
+            'Close': 'Закрити', 'Previous': 'Назад', 'Next': 'Далі',
+        },
+    },
     'es': {
         'title':       'Inmueble de Inversión en Anadia, Portugal · 790.000 € | Vila Anadia',
         'description': 'Vila Anadia: inmueble de 393 m² para inversión en Anadia, Portugal. 790.000 €. 13 unidades de alquiler + T3 privado, jardín, aparcamiento. Rentabilidad hasta ~18 %.',
@@ -307,5 +343,5 @@ def build(lang: str, out_dir: pathlib.Path):
 
 
 if __name__ == '__main__':
-    for lang in ('pt', 'de', 'fr', 'es'):
+    for lang in ('pt', 'de', 'fr', 'es', 'ru', 'uk'):
         build(lang, ROOT / lang)

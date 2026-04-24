@@ -16,6 +16,8 @@
   <link rel="alternate" hreflang="de" href="https://vilaanadia.com/de/" />
   <link rel="alternate" hreflang="fr" href="https://vilaanadia.com/fr/" />
   <link rel="alternate" hreflang="es" href="https://vilaanadia.com/es/" />
+  <link rel="alternate" hreflang="ru" href="https://vilaanadia.com/ru/" />
+  <link rel="alternate" hreflang="uk" href="https://vilaanadia.com/uk/" />
   <link rel="alternate" hreflang="x-default" href="https://vilaanadia.com/" />
 
   <!-- Open Graph -->
@@ -244,13 +246,15 @@
         <a href="#location" data-i18n="nav.location">Ubicación</a>
         <a href="#gallery" data-i18n="nav.gallery">Galería</a>
       </nav>
-      <div class="lang-switch" role="group" aria-label="Idioma">
-        <button type="button" class="lang-switch__btn is-active" data-lang="en" aria-label="English">EN</button>
-        <button type="button" class="lang-switch__btn" data-lang="pt" aria-label="Português">PT</button>
-        <button type="button" class="lang-switch__btn" data-lang="de" aria-label="Deutsch">DE</button>
-        <button type="button" class="lang-switch__btn" data-lang="fr" aria-label="Français">FR</button>
-        <button type="button" class="lang-switch__btn" data-lang="es" aria-label="Español">ES</button>
-      </div>
+      <button type="button" class="lang-trigger" id="langTrigger" aria-haspopup="dialog" aria-label="Choose language">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M2 12h20"/>
+          <path d="M12 2a15 15 0 0 1 0 20"/>
+          <path d="M12 2a15 15 0 0 0 0 20"/>
+        </svg>
+        <span class="lang-trigger__code" id="langTriggerCode">EN</span>
+      </button>
       <a href="#contact" class="btn btn--primary nav__cta" data-i18n="nav.cta">Pedir información</a>
       <button class="nav__toggle" aria-label="Abrir menú" id="navToggle">
         <span></span><span></span><span></span>
@@ -1010,6 +1014,67 @@
   <button class="back-to-top" id="backToTop" aria-label="Back to top">
     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
   </button>
+
+  <!-- Language modal -->
+  <div class="lang-modal" id="langModal" role="dialog" aria-modal="true" aria-labelledby="langModalTitle">
+    <div class="lang-modal__panel" role="document">
+      <header class="lang-modal__head">
+        <h2 class="lang-modal__title" id="langModalTitle">Select your language</h2>
+        <button type="button" class="lang-modal__close" id="langModalClose" aria-label="Cerrar">×</button>
+      </header>
+      <div class="lang-modal__grid" id="langModalGrid">
+        <button type="button" class="lang-option" data-lang="en">
+          <span class="lang-option__flag" aria-hidden="true">🇬🇧</span>
+          <span class="lang-option__body">
+            <span class="lang-option__native">English</span>
+            <span class="lang-option__sub">English</span>
+          </span>
+        </button>
+        <button type="button" class="lang-option" data-lang="pt">
+          <span class="lang-option__flag" aria-hidden="true">🇵🇹</span>
+          <span class="lang-option__body">
+            <span class="lang-option__native">Português</span>
+            <span class="lang-option__sub">Portuguese</span>
+          </span>
+        </button>
+        <button type="button" class="lang-option" data-lang="de">
+          <span class="lang-option__flag" aria-hidden="true">🇩🇪</span>
+          <span class="lang-option__body">
+            <span class="lang-option__native">Deutsch</span>
+            <span class="lang-option__sub">German</span>
+          </span>
+        </button>
+        <button type="button" class="lang-option" data-lang="fr">
+          <span class="lang-option__flag" aria-hidden="true">🇫🇷</span>
+          <span class="lang-option__body">
+            <span class="lang-option__native">Français</span>
+            <span class="lang-option__sub">French</span>
+          </span>
+        </button>
+        <button type="button" class="lang-option" data-lang="es">
+          <span class="lang-option__flag" aria-hidden="true">🇪🇸</span>
+          <span class="lang-option__body">
+            <span class="lang-option__native">Español</span>
+            <span class="lang-option__sub">Spanish</span>
+          </span>
+        </button>
+        <button type="button" class="lang-option" data-lang="ru">
+          <span class="lang-option__flag" aria-hidden="true">🇷🇺</span>
+          <span class="lang-option__body">
+            <span class="lang-option__native">Русский</span>
+            <span class="lang-option__sub">Russian</span>
+          </span>
+        </button>
+        <button type="button" class="lang-option" data-lang="uk">
+          <span class="lang-option__flag" aria-hidden="true">🇺🇦</span>
+          <span class="lang-option__body">
+            <span class="lang-option__native">Українська</span>
+            <span class="lang-option__sub">Ukrainian</span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </div>
 
   <!-- Lightbox -->
   <div class="lightbox" id="lightbox" role="dialog" aria-label="Visor de fotos" aria-modal="true">

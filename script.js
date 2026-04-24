@@ -1,8 +1,10 @@
 // =================== i18n ===================
-const I18N_LANGS = ['en', 'pt', 'de', 'fr', 'es'];
+const I18N_LANGS = ['en', 'pt', 'de', 'fr', 'es', 'ru', 'uk'];
 const I18N_DEFAULT = 'en';
 
-const I18N_PATH = { en: '/', pt: '/pt/', de: '/de/', fr: '/fr/', es: '/es/' };
+const I18N_PATH = {
+  en: '/', pt: '/pt/', de: '/de/', fr: '/fr/', es: '/es/', ru: '/ru/', uk: '/uk/'
+};
 
 function langFromPath() {
   const p = location.pathname;
@@ -78,34 +80,62 @@ function applyLang(lang) {
       }
     }
   });
-  // Update active state on switcher
-  document.querySelectorAll('.lang-switch__btn').forEach(b => {
-    b.classList.toggle('is-active', b.dataset.lang === lang);
+  // Sync trigger label and modal active state
+  const triggerCode = document.getElementById('langTriggerCode');
+  if (triggerCode) triggerCode.textContent = lang.toUpperCase();
+  document.querySelectorAll('.lang-option').forEach(opt => {
+    opt.classList.toggle('is-active', opt.dataset.lang === lang);
   });
 }
 
 async function initI18n() {
   const docLang = document.documentElement.lang;
   const targetLang = detectLang();
-  // If the page is already statically rendered in the requested language,
-  // skip fetching i18n.json — saves ~28 KB on every PT page load.
   if (docLang !== targetLang) {
     await loadTranslations();
     applyLang(targetLang);
   } else {
-    document.querySelectorAll('.lang-switch__btn').forEach(b => {
-      b.classList.toggle('is-active', b.dataset.lang === targetLang);
+    // Just sync the trigger label / modal active state without re-rendering
+    const triggerCode = document.getElementById('langTriggerCode');
+    if (triggerCode) triggerCode.textContent = targetLang.toUpperCase();
+    document.querySelectorAll('.lang-option').forEach(opt => {
+      opt.classList.toggle('is-active', opt.dataset.lang === targetLang);
     });
   }
-  document.querySelectorAll('.lang-switch__btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const newLang = btn.dataset.lang;
+
+  // ── Language modal behaviour ──
+  const trigger = document.getElementById('langTrigger');
+  const modal   = document.getElementById('langModal');
+  const closeBtn= document.getElementById('langModalClose');
+  function openModal() {
+    if (!modal) return;
+    modal.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    // Focus the active option for keyboard users
+    const active = modal.querySelector('.lang-option.is-active') || modal.querySelector('.lang-option');
+    active?.focus();
+  }
+  function closeModal() {
+    if (!modal) return;
+    modal.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+  trigger?.addEventListener('click', openModal);
+  closeBtn?.addEventListener('click', closeModal);
+  modal?.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && modal?.classList.contains('is-open')) closeModal();
+  });
+  document.querySelectorAll('.lang-option').forEach(opt => {
+    opt.addEventListener('click', () => {
+      const newLang = opt.dataset.lang;
       localStorage.setItem('lang', newLang);
       const target = I18N_PATH[newLang];
       if (target && target !== location.pathname) {
         location.href = target;
       } else {
         loadTranslations().then(() => applyLang(newLang));
+        closeModal();
       }
     });
   });
