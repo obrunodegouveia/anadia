@@ -229,7 +229,12 @@
     "foot.lc2": "WhatsApp",
     "foot.lc3": "Live Airbnb listing",
     "foot.lc4": "Download brochure (PDF)",
-    "foot.disc": "Information provided is indicative — verify with full documentation before purchase."
+    "foot.disc": "Information provided is indicative — verify with full documentation before purchase.",
+    "seller.kicker": "Meet the seller",
+    "seller.title": "Bruno Gouveia",
+    "seller.body": "Founder of eSIMpass. I built and operated this property myself — now selling to focus on the next venture. Happy to walk you through everything personally, in person or by video call.",
+    "seller.wa": "Message Bruno",
+    "seller.call": "Call +351 963 132 452"
   },
   "pt": {
     "nav.highlights": "Destaques",
@@ -461,7 +466,12 @@
     "foot.lc2": "WhatsApp",
     "foot.lc3": "Anúncio no Airbnb",
     "foot.lc4": "Descarregar brochura (PDF)",
-    "foot.disc": "Informação indicativa — verifique a documentação completa antes da compra."
+    "foot.disc": "Informação indicativa — verifique a documentação completa antes da compra.",
+    "seller.kicker": "Conheça o vendedor",
+    "seller.title": "Bruno Gouveia",
+    "seller.body": "Fundador da eSIMpass. Construí e operei este imóvel pessoalmente — vendo agora para focar no próximo projeto. Disponível para falar consigo presencialmente ou por videochamada.",
+    "seller.wa": "Falar com Bruno",
+    "seller.call": "Ligar +351 963 132 452"
   },
   "de": {
     "nav.highlights": "Highlights",
@@ -693,7 +703,12 @@
     "foot.lc2": "WhatsApp",
     "foot.lc3": "Live Airbnb-Inserat",
     "foot.lc4": "Broschüre herunterladen (PDF)",
-    "foot.disc": "Die bereitgestellten Informationen sind indikativ — vor dem Kauf mit vollständiger Dokumentation prüfen."
+    "foot.disc": "Die bereitgestellten Informationen sind indikativ — vor dem Kauf mit vollständiger Dokumentation prüfen.",
+    "seller.kicker": "Lernen Sie den Verkäufer kennen",
+    "seller.title": "Bruno Gouveia",
+    "seller.body": "Gründer von eSIMpass. Ich habe diese Immobilie selbst aufgebaut und betrieben — jetzt verkaufe ich, um mich auf das nächste Projekt zu konzentrieren. Gerne führe ich Sie persönlich durch alles, vor Ort oder per Videoanruf.",
+    "seller.wa": "Bruno schreiben",
+    "seller.call": "Anrufen +351 963 132 452"
   },
   "fr": {
     "nav.highlights": "Points forts",
@@ -925,7 +940,12 @@
     "foot.lc2": "WhatsApp",
     "foot.lc3": "Annonce Airbnb en direct",
     "foot.lc4": "Télécharger la brochure (PDF)",
-    "foot.disc": "Informations indicatives — vérifiez la documentation complète avant l'achat."
+    "foot.disc": "Informations indicatives — vérifiez la documentation complète avant l'achat.",
+    "seller.kicker": "Rencontrez le vendeur",
+    "seller.title": "Bruno Gouveia",
+    "seller.body": "Fondateur d'eSIMpass. J'ai construit et exploité cette propriété moi-même — je vends maintenant pour me concentrer sur le prochain projet. Heureux de tout vous expliquer personnellement, en personne ou par appel vidéo.",
+    "seller.wa": "Écrire à Bruno",
+    "seller.call": "Appeler +351 963 132 452"
   },
   "es": {
     "nav.highlights": "Destacados",
@@ -1157,7 +1177,12 @@
     "foot.lc2": "WhatsApp",
     "foot.lc3": "Anuncio en vivo de Airbnb",
     "foot.lc4": "Descargar folleto (PDF)",
-    "foot.disc": "Información indicativa — verifica la documentación completa antes de la compra."
+    "foot.disc": "Información indicativa — verifica la documentación completa antes de la compra.",
+    "seller.kicker": "Conoce al vendedor",
+    "seller.title": "Bruno Gouveia",
+    "seller.body": "Fundador de eSIMpass. Construí y operé esta propiedad yo mismo — ahora vendo para enfocarme en el próximo proyecto. Encantado de explicarte todo personalmente, en persona o por videollamada.",
+    "seller.wa": "Escribir a Bruno",
+    "seller.call": "Llamar +351 963 132 452"
   },
   "ru": {
     "nav.highlights": "Преимущества",
@@ -1389,7 +1414,12 @@
     "foot.lc2": "WhatsApp",
     "foot.lc3": "Объявление на Airbnb",
     "foot.lc4": "Скачать брошюру (PDF)",
-    "foot.disc": "Информация ориентировочная — проверьте полную документацию перед покупкой."
+    "foot.disc": "Информация ориентировочная — проверьте полную документацию перед покупкой.",
+    "seller.kicker": "Познакомьтесь с продавцом",
+    "seller.title": "Бруно Говейя",
+    "seller.body": "Основатель eSIMpass. Я лично построил и управлял этим объектом — теперь продаю, чтобы сосредоточиться на следующем проекте. Готов лично провести вас по всему — лично или по видеосвязи.",
+    "seller.wa": "Написать Бруно",
+    "seller.call": "Позвонить +351 963 132 452"
   },
   "uk": {
     "nav.highlights": "Переваги",
@@ -1621,7 +1651,12 @@
     "foot.lc2": "WhatsApp",
     "foot.lc3": "Оголошення на Airbnb",
     "foot.lc4": "Завантажити брошуру (PDF)",
-    "foot.disc": "Інформація орієнтовна — перевірте повну документацію перед купівлею."
+    "foot.disc": "Інформація орієнтовна — перевірте повну документацію перед купівлею.",
+    "seller.kicker": "Знайомтеся з продавцем",
+    "seller.title": "Бруно Говейя",
+    "seller.body": "Засновник eSIMpass. Я особисто збудував і керував цим об'єктом — зараз продаю, щоб зосередитися на наступному проєкті. Радо проведу вас по всьому особисто — на місці або через відеодзвінок.",
+    "seller.wa": "Написати Бруно",
+    "seller.call": "Зателефонувати +351 963 132 452"
   },
   "it": {
     "nav.highlights": "Punti forti",
@@ -1853,7 +1888,12 @@
     "foot.lc2": "WhatsApp",
     "foot.lc3": "Annuncio Airbnb live",
     "foot.lc4": "Scarica brochure (PDF)",
-    "foot.disc": "Informazioni indicative — verifica documentazione completa prima dell'acquisto."
+    "foot.disc": "Informazioni indicative — verifica documentazione completa prima dell'acquisto.",
+    "seller.kicker": "Conosci il venditore",
+    "seller.title": "Bruno Gouveia",
+    "seller.body": "Fondatore di eSIMpass. Ho costruito e gestito personalmente questa proprietà — ora vendo per concentrarmi sul prossimo progetto. Felice di accompagnarti personalmente in tutto, di persona o per videochiamata.",
+    "seller.wa": "Scrivi a Bruno",
+    "seller.call": "Chiama +351 963 132 452"
   },
   "pl": {
     "nav.highlights": "Najważniejsze",
@@ -2085,7 +2125,12 @@
     "foot.lc2": "WhatsApp",
     "foot.lc3": "Ogłoszenie Airbnb na żywo",
     "foot.lc4": "Pobierz broszurę (PDF)",
-    "foot.disc": "Informacje orientacyjne — sprawdź pełną dokumentację przed zakupem."
+    "foot.disc": "Informacje orientacyjne — sprawdź pełną dokumentację przed zakupem.",
+    "seller.kicker": "Poznaj sprzedawcę",
+    "seller.title": "Bruno Gouveia",
+    "seller.body": "Założyciel eSIMpass. Sam zbudowałem i prowadziłem tę nieruchomość — teraz sprzedaję, aby skupić się na kolejnym projekcie. Chętnie oprowadzę po wszystkim osobiście, na miejscu lub przez wideorozmowę.",
+    "seller.wa": "Napisz do Bruno",
+    "seller.call": "Zadzwoń +351 963 132 452"
   },
   "el": {
     "nav.highlights": "Χαρακτηριστικά",
@@ -2317,7 +2362,12 @@
     "foot.lc2": "WhatsApp",
     "foot.lc3": "Ζωντανή αγγελία Airbnb",
     "foot.lc4": "Λήψη brochure (PDF)",
-    "foot.disc": "Οι παρεχόμενες πληροφορίες είναι ενδεικτικές — επαληθεύστε με πλήρη τεκμηρίωση πριν την αγορά."
+    "foot.disc": "Οι παρεχόμενες πληροφορίες είναι ενδεικτικές — επαληθεύστε με πλήρη τεκμηρίωση πριν την αγορά.",
+    "seller.kicker": "Γνωρίστε τον πωλητή",
+    "seller.title": "Bruno Gouveia",
+    "seller.body": "Ιδρυτής της eSIMpass. Έχτισα και λειτούργησα αυτό το ακίνητο ο ίδιος — τώρα πουλώ για να επικεντρωθώ στο επόμενο εγχείρημα. Ευχαρίστως να σας ξεναγήσω σε όλα προσωπικά, αυτοπροσώπως ή με βιντεοκλήση.",
+    "seller.wa": "Στείλτε μήνυμα στον Bruno",
+    "seller.call": "Καλέστε +351 963 132 452"
   },
   "ja": {
     "nav.highlights": "特徴",
@@ -2549,7 +2599,12 @@
     "foot.lc2": "WhatsApp",
     "foot.lc3": "Airbnbライブ掲載",
     "foot.lc4": "ブローシャダウンロード（PDF）",
-    "foot.disc": "提供情報は参考値です — 購入前に完全なドキュメントで確認してください。"
+    "foot.disc": "提供情報は参考値です — 購入前に完全なドキュメントで確認してください。",
+    "seller.kicker": "売主のご紹介",
+    "seller.title": "ブルーノ・グベイア",
+    "seller.body": "eSIMpassの創設者。この物件は自分で建設し運営してきました — 次の事業に集中するため、今回売却します。対面またはビデオ通話で、すべてを直接ご案内できることを嬉しく思います。",
+    "seller.wa": "ブルーノにメッセージ",
+    "seller.call": "電話 +351 963 132 452"
   },
   "ar": {
     "nav.highlights": "المميزات",
@@ -2781,6 +2836,11 @@
     "foot.lc2": "WhatsApp",
     "foot.lc3": "إعلان Airbnb المباشر",
     "foot.lc4": "تحميل الكتيب (PDF)",
-    "foot.disc": "المعلومات إرشادية — تحقق من الوثائق الكاملة قبل الشراء."
+    "foot.disc": "المعلومات إرشادية — تحقق من الوثائق الكاملة قبل الشراء.",
+    "seller.kicker": "تعرف على البائع",
+    "seller.title": "برونو غوفيا",
+    "seller.body": "مؤسس eSIMpass. بنيت وشغّلت هذا العقار بنفسي — أبيع الآن للتركيز على المشروع التالي. يسعدني أن أشرح لك كل شيء شخصياً، حضورياً أو عبر مكالمة فيديو.",
+    "seller.wa": "راسل برونو",
+    "seller.call": "اتصل +351 963 132 452"
   }
 }
