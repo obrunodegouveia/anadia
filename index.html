@@ -11,6 +11,9 @@
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="theme-color" content="#0f1b2d" />
   <link rel="canonical" href="https://vilaanadia.com/" />
+  <link rel="alternate" hreflang="en" href="https://vilaanadia.com/?lang=en" />
+  <link rel="alternate" hreflang="pt" href="https://vilaanadia.com/?lang=pt" />
+  <link rel="alternate" hreflang="x-default" href="https://vilaanadia.com/" />
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
@@ -157,14 +160,18 @@
         <span class="nav__brand-text">Vila&nbsp;Anadia</span>
       </a>
       <nav class="nav__links" aria-label="Primary">
-        <a href="#highlights">Highlights</a>
-        <a href="#investment">Investment</a>
-        <a href="#layout">Layout</a>
-        <a href="#use-cases">Use Cases</a>
-        <a href="#location">Location</a>
-        <a href="#gallery">Gallery</a>
+        <a href="#highlights" data-i18n="nav.highlights">Highlights</a>
+        <a href="#investment" data-i18n="nav.investment">Investment</a>
+        <a href="#layout" data-i18n="nav.layout">Layout</a>
+        <a href="#use-cases" data-i18n="nav.useCases">Use Cases</a>
+        <a href="#location" data-i18n="nav.location">Location</a>
+        <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
       </nav>
-      <a href="#contact" class="btn btn--primary nav__cta">Request Details</a>
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" class="lang-switch__btn is-active" data-lang="en" aria-label="English">EN</button>
+        <button type="button" class="lang-switch__btn" data-lang="pt" aria-label="Português">PT</button>
+      </div>
+      <a href="#contact" class="btn btn--primary nav__cta" data-i18n="nav.cta">Request Details</a>
       <button class="nav__toggle" aria-label="Open menu" id="navToggle">
         <span></span><span></span><span></span>
       </button>
@@ -177,13 +184,13 @@
     <div class="container hero__inner">
       <div class="hero__eyebrow">
         <span class="dot"></span>
-        Investment Property · Anadia, Portugal
+        <span data-i18n="hero.eyebrow">Investment Property · Anadia, Portugal</span>
       </div>
       <h1 class="hero__title">
-        Live in Portugal <span class="accent">While Earning Income</span>
-        <span class="hero__sub-title">13 Rental Units + Private T3 — Coliving &amp; Coworking Project</span>
+        <span data-i18n="hero.titleA">Live in Portugal</span> <span class="accent" data-i18n="hero.titleB">While Earning Income</span>
+        <span class="hero__sub-title" data-i18n="hero.subtitle">13 Rental Units + Private T3 — Coliving &amp; Coworking Project</span>
       </h1>
-      <p class="hero__lead">
+      <p class="hero__lead" data-i18n-html="hero.lead">
         Fully renovated 393 m² building in the heart of Anadia. Owner T3 with
         terrace and independent entrance, plus 13 income units, common
         kitchens, a coworking lounge, and a 213 m² garden with parking and BBQ.
@@ -193,29 +200,29 @@
 
       <div class="hero__price">
         <div>
-          <span class="hero__price-label">Asking Price</span>
+          <span class="hero__price-label" data-i18n="hero.priceLabel">Asking Price</span>
           <span class="hero__price-value">€790,000</span>
         </div>
         <div class="hero__price-meta">
-          <div><strong>393 m²</strong><span>Useful Area</span></div>
-          <div><strong>13 + T3</strong><span>Units &amp; Owner</span></div>
-          <div><strong>26</strong><span>Guest Capacity</span></div>
-          <div><strong>~18%</strong><span>Max. Gross Yield</span></div>
+          <div><strong>393 m²</strong><span data-i18n="hero.statArea">Useful Area</span></div>
+          <div><strong>13 + T3</strong><span data-i18n="hero.statUnits">Units &amp; Owner</span></div>
+          <div><strong>26</strong><span data-i18n="hero.statCapacity">Guest Capacity</span></div>
+          <div><strong>~18%</strong><span data-i18n="hero.statYield">Max. Gross Yield</span></div>
         </div>
       </div>
 
       <div class="hero__cta">
-        <a href="#contact" class="btn btn--primary btn--lg">Request Investment Details</a>
-        <a href="#contact" class="btn btn--ghost btn--lg">Schedule a Visit</a>
+        <a href="#contact" class="btn btn--primary btn--lg" data-i18n="hero.ctaPrimary">Request Investment Details</a>
+        <a href="#contact" class="btn btn--ghost btn--lg" data-i18n="hero.ctaSecondary">Schedule a Visit</a>
         <a href="https://www.airbnb.co.uk/rooms/1493372824622095154" target="_blank" rel="noopener" class="btn btn--airbnb btn--lg">
-          <span class="airbnb-mark">Airbnb</span> View Live Listing
+          <span class="airbnb-mark">Airbnb</span> <span data-i18n="hero.ctaAirbnb">View Live Listing</span>
         </a>
       </div>
 
       <ul class="hero__trust">
-        <li>✓ Clear ownership</li>
-        <li>✓ Independent bathrooms</li>
-        <li>✓ Available for immediate operation</li>
+        <li data-i18n="hero.trust1">✓ Clear ownership</li>
+        <li data-i18n="hero.trust2">✓ Independent bathrooms</li>
+        <li data-i18n="hero.trust3">✓ Available for immediate operation</li>
       </ul>
     </div>
   </section>
@@ -224,56 +231,56 @@
   <section class="section" id="highlights">
     <div class="container">
       <div class="section__head">
-        <span class="kicker">Why this property</span>
-        <h2>One asset. Two clear benefits.</h2>
-        <p>A private home for the owner and an organized rental operation under the same roof.</p>
+        <span class="kicker" data-i18n="high.kicker">Why this property</span>
+        <h2 data-i18n="high.title">One asset. Two clear benefits.</h2>
+        <p data-i18n="high.sub">A private home for the owner and an organized rental operation under the same roof.</p>
       </div>
 
       <div class="grid grid--3">
         <div class="card card--feature">
           <div class="card__icon">🏠</div>
-          <h3>Private T3 for the owner</h3>
-          <p>A separate three-bedroom apartment lets you live on-site with full privacy from the rental operation.</p>
+          <h3 data-i18n="high.c1.t">Private T3 for the owner</h3>
+          <p data-i18n="high.c1.b">A separate three-bedroom apartment lets you live on-site with full privacy from the rental operation.</p>
         </div>
         <div class="card card--feature">
           <div class="card__icon">📈</div>
-          <h3>13 income-generating units</h3>
-          <p>Six rooms with shared bathrooms, six suites with private bathrooms, plus a T0 studio and T1 apartment — designed for steady rental cash flow.</p>
+          <h3 data-i18n="high.c2.t">13 income-generating units</h3>
+          <p data-i18n="high.c2.b">Six rooms with shared bathrooms, six suites with private bathrooms, plus a T0 studio and T1 apartment — designed for steady rental cash flow.</p>
         </div>
         <div class="card card--feature">
           <div class="card__icon">🛁</div>
-          <h3>Independent bathrooms</h3>
-          <p>Most units include private bathrooms, a key driver of occupancy, nightly rate, and guest satisfaction.</p>
+          <h3 data-i18n="high.c3.t">Independent bathrooms</h3>
+          <p data-i18n="high.c3.b">Most units include private bathrooms, a key driver of occupancy, nightly rate, and guest satisfaction.</p>
         </div>
         <div class="card card--feature">
           <div class="card__icon">🍳</div>
-          <h3>Strong common areas</h3>
-          <p>Generous shared kitchen, lounge, and living spaces ideal for coliving, retreats, or guesthouse formats.</p>
+          <h3 data-i18n="high.c4.t">Strong common areas</h3>
+          <p data-i18n="high.c4.b">Generous shared kitchen, lounge, and living spaces ideal for coliving, retreats, or guesthouse formats.</p>
         </div>
         <div class="card card--feature">
           <div class="card__icon">🛠️</div>
-          <h3>Ready or near-ready operation</h3>
-          <p>Heavy lifting is done. Take over and operate, or fine-tune to your preferred rental model.</p>
+          <h3 data-i18n="high.c5.t">Ready or near-ready operation</h3>
+          <p data-i18n="high.c5.b">Heavy lifting is done. Take over and operate, or fine-tune to your preferred rental model.</p>
         </div>
         <div class="card card--feature">
           <div class="card__icon">🌍</div>
-          <h3>Multiple rental formats</h3>
-          <p>Long-term rooms, mid-term coliving, or short-term Airbnb — flex the mix to match demand and lifestyle.</p>
+          <h3 data-i18n="high.c6.t">Multiple rental formats</h3>
+          <p data-i18n="high.c6.b">Long-term rooms, mid-term coliving, or short-term Airbnb — flex the mix to match demand and lifestyle.</p>
         </div>
         <div class="card card--feature">
           <div class="card__icon">🌳</div>
-          <h3>213 m² private garden</h3>
-          <p>Fully fenced garden with leisure zone, fire zone, and a 35 m² BBQ area with outdoor kitchen — perfect for events.</p>
+          <h3 data-i18n="high.c7.t">213 m² private garden</h3>
+          <p data-i18n="high.c7.b">Fully fenced garden with leisure zone, fire zone, and a 35 m² BBQ area with outdoor kitchen — perfect for events.</p>
         </div>
         <div class="card card--feature">
           <div class="card__icon">🚗</div>
-          <h3>8-car private parking</h3>
-          <p>106 m² of on-property parking — a major plus for guests, long-term tenants, and event hosting.</p>
+          <h3 data-i18n="high.c8.t">8-car private parking</h3>
+          <p data-i18n="high.c8.b">106 m² of on-property parking — a major plus for guests, long-term tenants, and event hosting.</p>
         </div>
         <div class="card card--feature">
           <div class="card__icon">💼</div>
-          <h3>Coworking-ready</h3>
-          <p>Common living room set up as a 31 m² coworking and relaxing space — already positioned for the digital nomad market.</p>
+          <h3 data-i18n="high.c9.t">Coworking-ready</h3>
+          <p data-i18n="high.c9.b">Common living room set up as a 31 m² coworking and relaxing space — already positioned for the digital nomad market.</p>
         </div>
       </div>
     </div>
@@ -283,79 +290,79 @@
   <section class="section section--dark" id="investment">
     <div class="container">
       <div class="section__head section__head--light">
-        <span class="kicker">The investment case</span>
-        <h2>Three scenarios. One property. Up to ~18% gross yield.</h2>
-        <p>Live-and-earn or pure investor — all three models are backed by the same fully renovated 393 m² building in Anadia, Portugal.</p>
+        <span class="kicker" data-i18n="inv.kicker">The investment case</span>
+        <h2 data-i18n="inv.title">Three scenarios. One property. Up to ~18% gross yield.</h2>
+        <p data-i18n="inv.sub">Live-and-earn or pure investor — all three models are backed by the same fully renovated 393 m² building in Anadia, Portugal.</p>
       </div>
 
       <div class="grid grid--3 grid--scenarios">
         <article class="scenario">
           <header class="scenario__head">
-            <span class="scenario__tag">Scenario A · Live + Earn</span>
-            <h3>Conservative · Long-term</h3>
-            <p>Stable monthly cash flow with low operational overhead. Rent each room or unit on long-term contracts. Owner lives in the T3.</p>
+            <span class="scenario__tag" data-i18n="scA.tag">Scenario A · Live + Earn</span>
+            <h3 data-i18n="scA.title">Conservative · Long-term</h3>
+            <p data-i18n="scA.lead">Stable monthly cash flow with low operational overhead. Rent each room or unit on long-term contracts. Owner lives in the T3.</p>
           </header>
           <ul class="scenario__list">
-            <li><span>6 rooms × ~€350</span><strong>€2,100 / mo</strong></li>
-            <li><span>6 suites × ~€450</span><strong>€2,700 / mo</strong></li>
-            <li><span>T0 studio</span><strong>€550 / mo</strong></li>
-            <li><span>T1 apartment</span><strong>€650 / mo</strong></li>
+            <li><span data-i18n="scA.l1.s">6 rooms × ~€350</span><strong data-i18n="scA.l1.v">€2,100 / mo</strong></li>
+            <li><span data-i18n="scA.l2.s">6 suites × ~€450</span><strong data-i18n="scA.l2.v">€2,700 / mo</strong></li>
+            <li><span data-i18n="scA.l3.s">T0 studio</span><strong data-i18n="scA.l3.v">€550 / mo</strong></li>
+            <li><span data-i18n="scA.l4.s">T1 apartment</span><strong data-i18n="scA.l4.v">€650 / mo</strong></li>
           </ul>
           <div class="scenario__totals">
-            <div><span>Monthly income</span><strong>~ €6,000</strong></div>
-            <div><span>Annual income</span><strong>~ €72,000</strong></div>
-            <div class="scenario__yield"><span>Gross yield @ €790k</span><strong>~ 9%</strong></div>
+            <div><span data-i18n="scA.t1.s">Monthly income</span><strong data-i18n="scA.t1.v">~ €6,000</strong></div>
+            <div><span data-i18n="scA.t2.s">Annual income</span><strong data-i18n="scA.t2.v">~ €72,000</strong></div>
+            <div class="scenario__yield"><span data-i18n="scA.ty.s">Gross yield @ €790k</span><strong data-i18n="scA.ty.v">~ 9%</strong></div>
           </div>
-          <p class="scenario__note">Indicative figures based on local long-term rates. Owner lives on-site in the private T3.</p>
+          <p class="scenario__note" data-i18n="scA.note">Indicative figures based on local long-term rates. Owner lives on-site in the private T3.</p>
         </article>
 
         <article class="scenario scenario--feature">
           <header class="scenario__head">
-            <span class="scenario__tag scenario__tag--accent">Scenario B · Live + Earn</span>
-            <h3>Optimized · Short-term / Airbnb</h3>
-            <p>Higher yield potential through nightly pricing, premium positioning, and seasonal demand. Owner still lives in the T3.</p>
+            <span class="scenario__tag scenario__tag--accent" data-i18n="scB.tag">Scenario B · Live + Earn</span>
+            <h3 data-i18n="scB.title">Optimized · Short-term / Airbnb</h3>
+            <p data-i18n="scB.lead">Higher yield potential through nightly pricing, premium positioning, and seasonal demand. Owner still lives in the T3.</p>
           </header>
           <ul class="scenario__list">
-            <li><span>Capacity</span><strong>26 guests</strong></li>
-            <li><span>Avg. nightly rate / unit</span><strong>€55 – €110</strong></li>
-            <li><span>Target occupancy</span><strong>60 – 70%</strong></li>
-            <li><span>Annual revenue range</span><strong>€110k – €150k</strong></li>
+            <li><span data-i18n="scB.l1.s">Capacity</span><strong data-i18n="scB.l1.v">26 guests</strong></li>
+            <li><span data-i18n="scB.l2.s">Avg. nightly rate / unit</span><strong data-i18n="scB.l2.v">€55 – €110</strong></li>
+            <li><span data-i18n="scB.l3.s">Target occupancy</span><strong data-i18n="scB.l3.v">60 – 70%</strong></li>
+            <li><span data-i18n="scB.l4.s">Annual revenue range</span><strong data-i18n="scB.l4.v">€110k – €150k</strong></li>
           </ul>
           <div class="scenario__totals">
-            <div><span>Annual income (mid-case)</span><strong>~ €130,000</strong></div>
-            <div><span>Payback potential</span><strong>~ 6 years</strong></div>
-            <div class="scenario__yield"><span>Gross yield @ €790k</span><strong>~ 14 – 19%</strong></div>
+            <div><span data-i18n="scB.t1.s">Annual income (mid-case)</span><strong data-i18n="scB.t1.v">~ €130,000</strong></div>
+            <div><span data-i18n="scB.t2.s">Payback potential</span><strong data-i18n="scB.t2.v">~ 6 years</strong></div>
+            <div class="scenario__yield"><span data-i18n="scB.ty.s">Gross yield @ €790k</span><strong data-i18n="scB.ty.v">~ 14 – 19%</strong></div>
           </div>
-          <p class="scenario__note">Upside scales with brand, photography, and operational model. Hybrid mix is also viable.</p>
+          <p class="scenario__note" data-i18n="scB.note">Upside scales with brand, photography, and operational model. Hybrid mix is also viable.</p>
         </article>
 
         <article class="scenario scenario--max">
           <header class="scenario__head">
-            <span class="scenario__tag scenario__tag--accent">Scenario C · Pure Investor</span>
-            <h3>Maximum · T3 also rented</h3>
-            <p>Don’t need to live there? Rent the T3 medium-term for ~€1,200/mo and stack it on top of the optimized Airbnb operation. The T3 has its own entrance and terrace.</p>
+            <span class="scenario__tag scenario__tag--accent" data-i18n="scC.tag">Scenario C · Pure Investor</span>
+            <h3 data-i18n="scC.title">Maximum · T3 also rented</h3>
+            <p data-i18n="scC.lead">Don’t need to live there? Rent the T3 medium-term for ~€1,200/mo and stack it on top of the optimized Airbnb operation. The T3 has its own entrance and terrace.</p>
           </header>
           <ul class="scenario__list">
-            <li><span>13 units (Airbnb mid-case)</span><strong>~ €130,000 / yr</strong></li>
-            <li><span>+ T3 medium-term</span><strong>~ €14,400 / yr</strong></li>
-            <li><span>Combined annual</span><strong>~ €144,400 / yr</strong></li>
-            <li><span>T3 monthly rent</span><strong>~ €1,200 / mo</strong></li>
+            <li><span data-i18n="scC.l1.s">13 units (Airbnb mid-case)</span><strong data-i18n="scC.l1.v">~ €130,000 / yr</strong></li>
+            <li><span data-i18n="scC.l2.s">+ T3 medium-term</span><strong data-i18n="scC.l2.v">~ €14,400 / yr</strong></li>
+            <li><span data-i18n="scC.l3.s">Combined annual</span><strong data-i18n="scC.l3.v">~ €144,400 / yr</strong></li>
+            <li><span data-i18n="scC.l4.s">T3 monthly rent</span><strong data-i18n="scC.l4.v">~ €1,200 / mo</strong></li>
           </ul>
           <div class="scenario__totals">
-            <div><span>Annual income (combined)</span><strong>~ €144,400</strong></div>
-            <div><span>Payback potential</span><strong>~ 5 – 6 years</strong></div>
-            <div class="scenario__yield"><span>Gross yield @ €790k</span><strong>~ 18%+</strong></div>
+            <div><span data-i18n="scC.t1.s">Annual income (combined)</span><strong data-i18n="scC.t1.v">~ €144,400</strong></div>
+            <div><span data-i18n="scC.t2.s">Payback potential</span><strong data-i18n="scC.t2.v">~ 5 – 6 years</strong></div>
+            <div class="scenario__yield"><span data-i18n="scC.ty.s">Gross yield @ €790k</span><strong data-i18n="scC.ty.v">~ 18%+</strong></div>
           </div>
-          <p class="scenario__note">The T3 (89.8 m² gross, 2 bathrooms, terrace) is a strong medium-term rental in central Portugal — corporate, expat or remote-worker demand.</p>
+          <p class="scenario__note" data-i18n="scC.note">The T3 (89.8 m² gross, 2 bathrooms, terrace) is a strong medium-term rental in central Portugal — corporate, expat or remote-worker demand.</p>
         </article>
       </div>
 
       <div class="callout">
         <div>
-          <h4>Asking €790,000 — turnkey hybrid asset</h4>
-          <p>Take over a fully renovated, ready-to-operate property. We share the full financial model, layout details and documentation with serious buyers.</p>
+          <h4 data-i18n="inv.callout.h">Asking €790,000 — turnkey hybrid asset</h4>
+          <p data-i18n="inv.callout.p">Take over a fully renovated, ready-to-operate property. We share the full financial model, layout details and documentation with serious buyers.</p>
         </div>
-        <a href="#contact" class="btn btn--primary">Request full financial breakdown</a>
+        <a href="#contact" class="btn btn--primary" data-i18n="inv.callout.cta">Request full financial breakdown</a>
       </div>
     </div>
   </section>
@@ -364,88 +371,88 @@
   <section class="section" id="layout">
     <div class="container">
       <div class="section__head">
-        <span class="kicker">Property layout</span>
-        <h2>Organized to live and operate.</h2>
-        <p>Fully renovated 393 m² building over two floors plus garden. The owner T3 has its own entrance and terrace; the rental operation is structured for clarity and easy management.</p>
+        <span class="kicker" data-i18n="lay.kicker">Property layout</span>
+        <h2 data-i18n="lay.title">Organized to live and operate.</h2>
+        <p data-i18n="lay.sub">Fully renovated 393 m² building over two floors plus garden. The owner T3 has its own entrance and terrace; the rental operation is structured for clarity and easy management.</p>
       </div>
 
       <!-- Key facts strip -->
       <div class="facts">
-        <div class="fact"><strong>393 m²</strong><span>Useful area</span></div>
-        <div class="fact"><strong>13 + T3</strong><span>Income units + owner</span></div>
-        <div class="fact"><strong>26</strong><span>Guest capacity</span></div>
-        <div class="fact"><strong>11</strong><span>Bathrooms</span></div>
-        <div class="fact"><strong>4</strong><span>Kitchens</span></div>
-        <div class="fact"><strong>213 m²</strong><span>Garden</span></div>
-        <div class="fact"><strong>8</strong><span>Parking spots</span></div>
-        <div class="fact"><strong>35 m²</strong><span>BBQ zone</span></div>
+        <div class="fact"><strong>393 m²</strong><span data-i18n="fact.area.l">Useful area</span></div>
+        <div class="fact"><strong>13 + T3</strong><span data-i18n="fact.unit.l">Income units + owner</span></div>
+        <div class="fact"><strong>26</strong><span data-i18n="fact.cap.l">Guest capacity</span></div>
+        <div class="fact"><strong>11</strong><span data-i18n="fact.bath.l">Bathrooms</span></div>
+        <div class="fact"><strong>4</strong><span data-i18n="fact.kit.l">Kitchens</span></div>
+        <div class="fact"><strong>213 m²</strong><span data-i18n="fact.gar.l">Garden</span></div>
+        <div class="fact"><strong>8</strong><span data-i18n="fact.park.l">Parking spots</span></div>
+        <div class="fact"><strong>35 m²</strong><span data-i18n="fact.bbq.l">BBQ zone</span></div>
       </div>
 
       <!-- Floor plans -->
       <div class="floors">
         <article class="floor">
           <header class="floor__head">
-            <span class="floor__tag">Ground floor</span>
-            <h3>Common areas + 5 income units</h3>
-            <p>Two independent suites with bathroom, one studio (T0) with private bathroom and independent entrance, plus a suite with private bathroom and independent entrance. Common living room, kitchen and laundry.</p>
+            <span class="floor__tag" data-i18n="floor1.tag">Ground floor</span>
+            <h3 data-i18n="floor1.title">Common areas + 5 income units</h3>
+            <p data-i18n="floor1.lead">Two independent suites with bathroom, one studio (T0) with private bathroom and independent entrance, plus a suite with private bathroom and independent entrance. Common living room, kitchen and laundry.</p>
           </header>
           <div class="floor__plan">
             <img src="images/floorplan-ground.jpg" alt="Ground floor plan" loading="lazy" />
           </div>
           <ul class="floor__list">
-            <li>Two suites with private bathroom</li>
-            <li>One studio (T0) with private bathroom + independent entrance</li>
-            <li>One suite with private bathroom + independent entrance</li>
-            <li>Common living room + kitchen + laundry</li>
+            <li data-i18n="floor1.li1">Two suites with private bathroom</li>
+            <li data-i18n="floor1.li2">One studio (T0) with private bathroom + independent entrance</li>
+            <li data-i18n="floor1.li3">One suite with private bathroom + independent entrance</li>
+            <li data-i18n="floor1.li4">Common living room + kitchen + laundry</li>
           </ul>
         </article>
 
         <article class="floor">
           <header class="floor__head">
-            <span class="floor__tag floor__tag--alt">First floor</span>
-            <h3>Owner T3 + 8 income units</h3>
-            <p>The owner T3 has an independent entrance and a terrace. Plus a T1 with kitchen, four en-suite bedrooms with two balconies, and three additional suites — all sharing a common living area and kitchen.</p>
+            <span class="floor__tag floor__tag--alt" data-i18n="floor2.tag">First floor</span>
+            <h3 data-i18n="floor2.title">Owner T3 + 8 income units</h3>
+            <p data-i18n="floor2.lead">The owner T3 has an independent entrance and a terrace. Plus a T1 with kitchen, four en-suite bedrooms with two balconies, and three additional suites — all sharing a common living area and kitchen.</p>
           </header>
           <div class="floor__plan">
             <img src="images/floorplan-first.jpg" alt="First floor plan" loading="lazy" />
           </div>
           <ul class="floor__list">
-            <li><strong>T3 with terrace + 2 bathrooms</strong> (independent entrance, owner unit)</li>
-            <li>T1 with private bathroom and kitchen</li>
-            <li>Four suites with private bathroom + two balconies</li>
-            <li>Three suites with two bathrooms</li>
-            <li>Common living area + kitchen</li>
+            <li data-i18n-html="floor2.li1"><strong>T3 with terrace + 2 bathrooms</strong> (independent entrance, owner unit)</li>
+            <li data-i18n="floor2.li2">T1 with private bathroom and kitchen</li>
+            <li data-i18n="floor2.li3">Four suites with private bathroom + two balconies</li>
+            <li data-i18n="floor2.li4">Three suites with two bathrooms</li>
+            <li data-i18n="floor2.li5">Common living area + kitchen</li>
           </ul>
         </article>
 
         <article class="floor floor--full">
           <header class="floor__head">
-            <span class="floor__tag floor__tag--soft">Garden &amp; outdoor</span>
-            <h3>213 m² fenced garden + parking</h3>
-            <p>A large outdoor space designed for leisure and events — with a barbecue zone, fire zone, and parking for 8 vehicles.</p>
+            <span class="floor__tag floor__tag--soft" data-i18n="floor3.tag">Garden &amp; outdoor</span>
+            <h3 data-i18n="floor3.title">213 m² fenced garden + parking</h3>
+            <p data-i18n="floor3.lead">A large outdoor space designed for leisure and events — with a barbecue zone, fire zone, and parking for 8 vehicles.</p>
           </header>
           <ul class="floor__list floor__list--row">
-            <li>🌿 213 m² leisure garden, fully fenced</li>
-            <li>🔥 Fire zone</li>
-            <li>🍖 35 m² BBQ area with outdoor kitchen &amp; dining</li>
-            <li>🚗 Parking — 8 lots (106 m²)</li>
+            <li data-i18n="floor3.li1">🌿 213 m² leisure garden, fully fenced</li>
+            <li data-i18n="floor3.li2">🔥 Fire zone</li>
+            <li data-i18n="floor3.li3">🍖 35 m² BBQ area with outdoor kitchen &amp; dining</li>
+            <li data-i18n="floor3.li4">🚗 Parking — 8 lots (106 m²)</li>
           </ul>
         </article>
       </div>
 
       <!-- Full unit inventory -->
       <div class="inventory">
-        <h3 class="inventory__title">Complete unit inventory</h3>
-        <p class="inventory__sub">All areas in m² (gross / net), as per the official property dossier.</p>
+        <h3 class="inventory__title" data-i18n="inv2.title">Complete unit inventory</h3>
+        <p class="inventory__sub" data-i18n="inv2.sub">All areas in m² (gross / net), as per the official property dossier.</p>
 
         <div class="inventory__wrap">
           <table class="inventory__table">
             <thead>
               <tr>
-                <th>Unit</th>
-                <th>Description</th>
-                <th>Gross m²</th>
-                <th>Net m²</th>
+                <th data-i18n="inv2.h1">Unit</th>
+                <th data-i18n="inv2.h2">Description</th>
+                <th data-i18n="inv2.h3">Gross m²</th>
+                <th data-i18n="inv2.h4">Net m²</th>
               </tr>
             </thead>
             <tbody>
@@ -479,35 +486,35 @@
   <section class="section section--soft" id="use-cases">
     <div class="container">
       <div class="section__head">
-        <span class="kicker">Use cases</span>
-        <h2>A coliving &amp; coworking project.</h2>
-        <p>Already positioned as a community-driven coliving and coworking space — “collaborate, learn, live and work together, as you inspire and support each other.” Use the existing model or run any of the formats below.</p>
+        <span class="kicker" data-i18n="cases.kicker">Use cases</span>
+        <h2 data-i18n="cases.title">A coliving &amp; coworking project.</h2>
+        <p data-i18n="cases.sub">Already positioned as a community-driven coliving and coworking space — “collaborate, learn, live and work together, as you inspire and support each other.” Use the existing model or run any of the formats below.</p>
       </div>
 
       <div class="grid grid--3 grid--use">
         <div class="usecase">
-          <h3>Live + Airbnb business</h3>
-          <p>Live in the T3 while running the 11 units as short-term rentals. Hands-on or with a local manager.</p>
+          <h3 data-i18n="uc1.t">Live + Airbnb business</h3>
+          <p data-i18n="uc1.b">Live in the T3 while running the 13 units as short-term rentals. Hands-on or with a local manager.</p>
         </div>
         <div class="usecase">
-          <h3>Coliving space</h3>
-          <p>Mid-term stays for remote workers and digital nomads, with shared common areas as a community hub.</p>
+          <h3 data-i18n="uc2.t">Coliving space</h3>
+          <p data-i18n="uc2.b">Mid-term stays for remote workers and digital nomads, with shared common areas as a community hub.</p>
         </div>
         <div class="usecase">
-          <h3>Boutique guesthouse</h3>
-          <p>Brand it as a small, design-led guesthouse and tap into Bairrada’s growing wine and cultural tourism.</p>
+          <h3 data-i18n="uc3.t">Boutique guesthouse</h3>
+          <p data-i18n="uc3.b">Brand it as a small, design-led guesthouse and tap into Bairrada’s growing wine and cultural tourism.</p>
         </div>
         <div class="usecase">
-          <h3>Digital nomad hub</h3>
-          <p>Long stays, fast Wi-Fi, shared workspace and lounge — a turnkey nomad base in central Portugal.</p>
+          <h3 data-i18n="uc4.t">Digital nomad hub</h3>
+          <p data-i18n="uc4.b">Long stays, fast Wi-Fi, shared workspace and lounge — a turnkey nomad base in central Portugal.</p>
         </div>
         <div class="usecase">
-          <h3>Retreat &amp; creative space</h3>
-          <p>Host yoga, wellness, writing or corporate retreats using the full house and shared infrastructure.</p>
+          <h3 data-i18n="uc5.t">Retreat &amp; creative space</h3>
+          <p data-i18n="uc5.b">Host yoga, wellness, writing or corporate retreats using the full house and shared infrastructure.</p>
         </div>
         <div class="usecase">
-          <h3>Hybrid model</h3>
-          <p>Mix long-term rooms with short-term units to balance stability and yield throughout the year.</p>
+          <h3 data-i18n="uc6.t">Hybrid model</h3>
+          <p data-i18n="uc6.b">Mix long-term rooms with short-term units to balance stability and yield throughout the year.</p>
         </div>
       </div>
     </div>
@@ -517,37 +524,37 @@
   <section class="section" id="location">
     <div class="container">
       <div class="section__head">
-        <span class="kicker">Location</span>
-        <h2>Anadia · Central Portugal.</h2>
-        <p>In the heart of a small Portuguese town, with charming cafés and restaurants offering traditional flavours. Well-connected by public transport — easy access to nearby cities and beaches.</p>
+        <span class="kicker" data-i18n="loc.kicker">Location</span>
+        <h2 data-i18n="loc.title">Anadia · Central Portugal.</h2>
+        <p data-i18n="loc.sub">In the heart of a small Portuguese town, with charming cafés and restaurants offering traditional flavours. Well-connected by public transport — easy access to nearby cities and beaches.</p>
       </div>
 
       <div class="grid grid--2 grid--location">
         <div class="location__copy">
           <ul class="location__facts">
             <li>
-              <strong>Central Portugal</strong>
-              <span>Strategic position between two major hubs.</span>
+              <strong data-i18n="lf1.s">Central Portugal</strong>
+              <span data-i18n="lf1.b">Strategic position between two major hubs.</span>
             </li>
             <li>
-              <strong>~30 min to Coimbra</strong>
-              <span>Historic university city, hospitals, services.</span>
+              <strong data-i18n="lf2.s">~30 min to Coimbra</strong>
+              <span data-i18n="lf2.b">Historic university city, hospitals, services.</span>
             </li>
             <li>
-              <strong>~1h to Porto</strong>
-              <span>International airport and global flight network.</span>
+              <strong data-i18n="lf3.s">~1h to Porto</strong>
+              <span data-i18n="lf3.b">International airport and global flight network.</span>
             </li>
             <li>
-              <strong>Bairrada wine region</strong>
-              <span>One of Portugal’s most distinctive wine areas.</span>
+              <strong data-i18n="lf4.s">Bairrada wine region</strong>
+              <span data-i18n="lf4.b">One of Portugal’s most distinctive wine areas.</span>
             </li>
             <li>
-              <strong>Authentic, quiet environment</strong>
-              <span>Real Portugal — not over-touristed, not overpriced.</span>
+              <strong data-i18n="lf5.s">Authentic, quiet environment</strong>
+              <span data-i18n="lf5.b">Real Portugal — not over-touristed, not overpriced.</span>
             </li>
             <li>
-              <strong>Growing tourism appeal</strong>
-              <span>Wine, gastronomy, nature, slow travel.</span>
+              <strong data-i18n="lf6.s">Growing tourism appeal</strong>
+              <span data-i18n="lf6.b">Wine, gastronomy, nature, slow travel.</span>
             </li>
           </ul>
         </div>
@@ -568,17 +575,17 @@
   <section class="section section--soft" id="gallery">
     <div class="container">
       <div class="section__head">
-        <span class="kicker">Gallery</span>
-        <h2>Inside the property.</h2>
-        <p>A look at the exterior, the owner’s apartment, the rental units, and the shared spaces.</p>
+        <span class="kicker" data-i18n="gal.kicker">Gallery</span>
+        <h2 data-i18n="gal.title">Inside the property.</h2>
+        <p data-i18n="gal.sub">A look at the exterior, the owner’s apartment, the rental units, and the shared spaces.</p>
       </div>
 
       <div class="gallery__filters" role="tablist" aria-label="Gallery filters">
-        <button class="chip is-active" data-filter="all">All <span>47</span></button>
-        <button class="chip" data-filter="exterior">Exterior</button>
-        <button class="chip" data-filter="common">Common areas</button>
-        <button class="chip" data-filter="rooms">Rooms</button>
-        <button class="chip" data-filter="bathrooms">Bathrooms</button>
+        <button class="chip is-active" data-filter="all"><span data-i18n="gf.all">All</span> <span>47</span></button>
+        <button class="chip" data-filter="exterior" data-i18n="gf.exterior">Exterior</button>
+        <button class="chip" data-filter="common" data-i18n="gf.common">Common areas</button>
+        <button class="chip" data-filter="rooms" data-i18n="gf.rooms">Rooms</button>
+        <button class="chip" data-filter="bathrooms" data-i18n="gf.bath">Bathrooms</button>
       </div>
 
       <div class="gallery" id="gallery">
@@ -779,7 +786,7 @@
         </figure>
       </div>
 
-      <p class="gallery__note">All 47 photos available — click any image to view full-screen.</p>
+      <p class="gallery__note" data-i18n="gal.note">All 47 photos available — click any image to view full-screen.</p>
     </div>
   </section>
 
@@ -788,16 +795,16 @@
     <div class="container">
       <div class="trust">
         <div class="trust__item">
-          <h4>Clear ownership</h4>
-          <p>Property held under clear, transparent ownership. Documentation available for serious buyers.</p>
+          <h4 data-i18n="trust.t1">Clear ownership</h4>
+          <p data-i18n="trust.b1">Property held under clear, transparent ownership. Documentation available for serious buyers.</p>
         </div>
         <div class="trust__item">
-          <h4>Available for immediate operation</h4>
-          <p>Take over a working asset — not a renovation project. Ideal for buyers ready to start earning quickly.</p>
+          <h4 data-i18n="trust.t2">Available for immediate operation</h4>
+          <p data-i18n="trust.b2">Take over a working asset — not a renovation project. Ideal for buyers ready to start earning quickly.</p>
         </div>
         <div class="trust__item">
-          <h4>Lifestyle + income</h4>
-          <p>Built for buyers who want to combine living in Portugal with a credible, scalable rental business.</p>
+          <h4 data-i18n="trust.t3">Lifestyle + income</h4>
+          <p data-i18n="trust.b3">Built for buyers who want to combine living in Portugal with a credible, scalable rental business.</p>
         </div>
       </div>
     </div>
@@ -807,57 +814,57 @@
   <section class="section section--contact" id="contact">
     <div class="container grid grid--2 grid--contact">
       <div class="contact__copy">
-        <span class="kicker">Next step</span>
-        <h2>Request the full investment file.</h2>
-        <p>Get the complete financial breakdown, layout details, and additional photography. Schedule an in-person or video visit when you’re ready.</p>
+        <span class="kicker" data-i18n="con.kicker">Next step</span>
+        <h2 data-i18n="con.title">Request the full investment file.</h2>
+        <p data-i18n="con.sub">Get the complete financial breakdown, layout details, and additional photography. Schedule an in-person or video visit when you’re ready.</p>
 
         <ul class="contact__list">
-          <li>📄 Full financial breakdown</li>
-          <li>📐 Detailed layout &amp; floor plans</li>
-          <li>📷 Extended photo set</li>
-          <li>📅 Visit scheduling — on-site or video</li>
+          <li data-i18n="con.li1">📄 Full financial breakdown</li>
+          <li data-i18n="con.li2">📐 Detailed layout &amp; floor plans</li>
+          <li data-i18n="con.li3">📷 Extended photo set</li>
+          <li data-i18n="con.li4">📅 Visit scheduling — on-site or video</li>
         </ul>
 
         <a href="https://wa.me/351000000000?text=Hello%2C%20I%27d%20like%20more%20info%20about%20the%20Anadia%20property"
            class="btn btn--whatsapp" target="_blank" rel="noopener">
-          <span class="wa">WA</span> Message us on WhatsApp
+          <span class="wa">WA</span> <span data-i18n="con.wa">Message us on WhatsApp</span>
         </a>
         <a href="https://www.airbnb.co.uk/rooms/1493372824622095154" target="_blank" rel="noopener" class="btn btn--airbnb">
-          <span class="airbnb-mark">Airbnb</span> See it live on Airbnb
+          <span class="airbnb-mark">Airbnb</span> <span data-i18n="con.airbnb">See it live on Airbnb</span>
         </a>
       </div>
 
       <form class="contact__form" onsubmit="event.preventDefault(); this.querySelector('.contact__success').hidden=false; this.reset();">
-        <h3>Request investment details</h3>
+        <h3 data-i18n="form.h">Request investment details</h3>
         <div class="field">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" required placeholder="Your full name" />
+          <label for="name" data-i18n="form.name.l">Name</label>
+          <input id="name" name="name" type="text" required placeholder="Your full name" data-i18n-attr-placeholder="form.name.p" />
         </div>
         <div class="field">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" required placeholder="you@email.com" />
+          <label for="email" data-i18n="form.email.l">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@email.com" data-i18n-attr-placeholder="form.email.p" />
         </div>
         <div class="field">
-          <label for="phone">Phone (optional)</label>
-          <input id="phone" name="phone" type="tel" placeholder="+351 ..." />
+          <label for="phone" data-i18n="form.phone.l">Phone (optional)</label>
+          <input id="phone" name="phone" type="tel" placeholder="+351 ..." data-i18n-attr-placeholder="form.phone.p" />
         </div>
         <div class="field">
-          <label for="interest">Primary interest</label>
+          <label for="interest" data-i18n="form.interest.l">Primary interest</label>
           <select id="interest" name="interest">
-            <option>Investment / rental income</option>
-            <option>Live + earn (owner-occupier)</option>
-            <option>Airbnb / short-term operation</option>
-            <option>Coliving / digital nomad</option>
-            <option>Guesthouse / retreat</option>
-            <option>Other</option>
+            <option data-i18n="form.opt1">Investment / rental income</option>
+            <option data-i18n="form.opt2">Live + earn (owner-occupier)</option>
+            <option data-i18n="form.opt3">Airbnb / short-term operation</option>
+            <option data-i18n="form.opt4">Coliving / digital nomad</option>
+            <option data-i18n="form.opt5">Guesthouse / retreat</option>
+            <option data-i18n="form.opt6">Other</option>
           </select>
         </div>
         <div class="field">
-          <label for="msg">Message</label>
-          <textarea id="msg" name="message" rows="4" placeholder="Tell us briefly what you’re looking for."></textarea>
+          <label for="msg" data-i18n="form.msg.l">Message</label>
+          <textarea id="msg" name="message" rows="4" placeholder="Tell us briefly what you’re looking for." data-i18n-attr-placeholder="form.msg.p"></textarea>
         </div>
-        <button type="submit" class="btn btn--primary btn--block">Send request</button>
-        <p class="contact__success" hidden>✓ Thank you — we’ll be in touch within 24 hours.</p>
+        <button type="submit" class="btn btn--primary btn--block" data-i18n="form.send">Send request</button>
+        <p class="contact__success" hidden data-i18n="form.success">✓ Thank you — we’ll be in touch within 24 hours.</p>
       </form>
     </div>
   </section>
@@ -870,31 +877,31 @@
           <span class="nav__brand-mark">A</span>
           <span class="nav__brand-text">Vila&nbsp;Anadia</span>
         </a>
-        <p class="footer__tag">Live in Portugal. Earn income. One property.</p>
+        <p class="footer__tag" data-i18n="foot.tag">Live in Portugal. Earn income. One property.</p>
       </div>
       <div class="footer__cols">
         <div>
-          <h5>Property</h5>
-          <a href="#highlights">Highlights</a>
-          <a href="#investment">Investment</a>
-          <a href="#layout">Layout</a>
+          <h5 data-i18n="foot.h1">Property</h5>
+          <a href="#highlights" data-i18n="foot.la1">Highlights</a>
+          <a href="#investment" data-i18n="foot.la2">Investment</a>
+          <a href="#layout" data-i18n="foot.la3">Layout</a>
         </div>
         <div>
-          <h5>Explore</h5>
-          <a href="#use-cases">Use cases</a>
-          <a href="#location">Location</a>
-          <a href="#gallery">Gallery</a>
+          <h5 data-i18n="foot.h2">Explore</h5>
+          <a href="#use-cases" data-i18n="foot.lb1">Use cases</a>
+          <a href="#location" data-i18n="foot.lb2">Location</a>
+          <a href="#gallery" data-i18n="foot.lb3">Gallery</a>
         </div>
         <div>
-          <h5>Contact</h5>
-          <a href="#contact">Request details</a>
-          <a href="https://wa.me/351000000000" target="_blank" rel="noopener">WhatsApp</a>
-          <a href="https://www.airbnb.co.uk/rooms/1493372824622095154" target="_blank" rel="noopener">Live Airbnb listing</a>
+          <h5 data-i18n="foot.h3">Contact</h5>
+          <a href="#contact" data-i18n="foot.lc1">Request details</a>
+          <a href="https://wa.me/351000000000" target="_blank" rel="noopener" data-i18n="foot.lc2">WhatsApp</a>
+          <a href="https://www.airbnb.co.uk/rooms/1493372824622095154" target="_blank" rel="noopener" data-i18n="foot.lc3">Live Airbnb listing</a>
         </div>
       </div>
     </div>
     <div class="container footer__base">
-      <small>© <span id="year"></span> Vila Anadia. Information provided is indicative — verify with full documentation before purchase.</small>
+      <small>© <span id="year"></span> Vila Anadia. <span data-i18n="foot.disc">Information provided is indicative — verify with full documentation before purchase.</span></small>
     </div>
   </footer>
 

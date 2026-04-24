@@ -1,3 +1,75 @@
+// =================== i18n ===================
+const I18N_LANGS = ['en', 'pt'];
+const I18N_DEFAULT = 'en';
+
+function detectLang() {
+  const url = new URLSearchParams(location.search).get('lang');
+  if (url && I18N_LANGS.includes(url)) return url;
+  const stored = localStorage.getItem('lang');
+  if (stored && I18N_LANGS.includes(stored)) return stored;
+  const browser = (navigator.language || 'en').slice(0, 2).toLowerCase();
+  if (I18N_LANGS.includes(browser)) return browser;
+  return I18N_DEFAULT;
+}
+
+let translations = null;
+
+async function loadTranslations() {
+  if (translations) return translations;
+  try {
+    const res = await fetch('/i18n.json', { cache: 'force-cache' });
+    translations = await res.json();
+  } catch (e) {
+    console.warn('i18n load failed', e);
+    translations = { en: {}, pt: {} };
+  }
+  return translations;
+}
+
+function applyLang(lang) {
+  const dict = (translations && translations[lang]) || {};
+  document.documentElement.lang = lang;
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const k = el.getAttribute('data-i18n');
+    if (dict[k] != null) el.textContent = dict[k];
+  });
+  document.querySelectorAll('[data-i18n-html]').forEach(el => {
+    const k = el.getAttribute('data-i18n-html');
+    if (dict[k] != null) el.innerHTML = dict[k];
+  });
+  // Attribute translations: data-i18n-attr-XYZ="key" → set attribute XYZ
+  document.querySelectorAll('*').forEach(el => {
+    for (const attr of el.attributes) {
+      if (attr.name.startsWith('data-i18n-attr-')) {
+        const target = attr.name.slice('data-i18n-attr-'.length);
+        const k = attr.value;
+        if (dict[k] != null) el.setAttribute(target, dict[k]);
+      }
+    }
+  });
+  // Update active state on switcher
+  document.querySelectorAll('.lang-switch__btn').forEach(b => {
+    b.classList.toggle('is-active', b.dataset.lang === lang);
+  });
+}
+
+async function initI18n() {
+  await loadTranslations();
+  const lang = detectLang();
+  applyLang(lang);
+  document.querySelectorAll('.lang-switch__btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const newLang = btn.dataset.lang;
+      localStorage.setItem('lang', newLang);
+      const url = new URL(location.href);
+      url.searchParams.set('lang', newLang);
+      history.replaceState(null, '', url);
+      applyLang(newLang);
+    });
+  });
+}
+initI18n();
+
 // Mobile nav toggle
 const nav = document.getElementById('nav');
 const toggle = document.getElementById('navToggle');
