@@ -1408,6 +1408,43 @@ p  { margin: 0 0 1em; color: var(--ink-soft); }
   border-radius: 999px;
 }
 
+/* ==================== RTL OVERRIDES (Arabic) ==================== */
+[dir="rtl"] body { text-align: right; }
+[dir="rtl"] .nav__inner,
+[dir="rtl"] .hero__cta,
+[dir="rtl"] .hero__trust,
+[dir="rtl"] .hero__price-meta { direction: rtl; }
+[dir="rtl"] .hero__price-meta { margin-left: 0; margin-right: auto; }
+[dir="rtl"] .lang-switch { margin-left: 0; margin-right: auto; }
+[dir="rtl"] .floor__list li,
+[dir="rtl"] .layout__group ul li {
+  padding-left: 0;
+  padding-right: 20px;
+}
+[dir="rtl"] .floor__list li::before,
+[dir="rtl"] .layout__group ul li::before {
+  left: auto;
+  right: 0;
+  content: "‹";
+}
+[dir="rtl"] .usecase::before {
+  left: auto;
+  right: 0;
+}
+[dir="rtl"] .lightbox__close { right: auto; left: 24px; }
+[dir="rtl"] .lightbox__prev  { left: auto; right: 24px; }
+[dir="rtl"] .lightbox__next  { right: auto; left: 24px; }
+[dir="rtl"] .lightbox__counter { left: auto; right: 24px; }
+[dir="rtl"] .back-to-top { right: auto; left: 22px; }
+[dir="rtl"] .ccy-switch { margin-left: 0; margin-right: auto; }
+[dir="rtl"] .inventory__table th,
+[dir="rtl"] .inventory__table td { text-align: right; }
+[dir="rtl"] .inventory__table th:nth-child(3),
+[dir="rtl"] .inventory__table th:nth-child(4),
+[dir="rtl"] .inventory__table td:nth-child(3),
+[dir="rtl"] .inventory__table td:nth-child(4) { text-align: left; }
+[dir="rtl"] .footer__cols a { text-align: right; }
+
 /* ==================== UTIL / MOTION ==================== */
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }

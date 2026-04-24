@@ -1,9 +1,11 @@
 // =================== i18n ===================
-const I18N_LANGS = ['en', 'pt', 'de', 'fr', 'es', 'ru', 'uk'];
+const I18N_LANGS = ['en', 'pt', 'de', 'fr', 'es', 'ru', 'uk', 'it', 'pl', 'el', 'ja', 'ar'];
 const I18N_DEFAULT = 'en';
 
 const I18N_PATH = {
-  en: '/', pt: '/pt/', de: '/de/', fr: '/fr/', es: '/es/', ru: '/ru/', uk: '/uk/'
+  en: '/', pt: '/pt/', de: '/de/', fr: '/fr/', es: '/es/',
+  ru: '/ru/', uk: '/uk/', it: '/it/', pl: '/pl/', el: '/el/',
+  ja: '/ja/', ar: '/ar/'
 };
 
 function langFromPath() {

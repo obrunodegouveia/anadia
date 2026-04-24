@@ -208,6 +208,81 @@ META = {
             'Close': 'Закрити', 'Previous': 'Назад', 'Next': 'Далі',
         },
     },
+    'it': {
+        'title':       "Immobile da Investimento ad Anadia, Portogallo · 790.000 € | Vila Anadia",
+        'description': "Vila Anadia: immobile da investimento di 393 m² ad Anadia, Portogallo. 790.000 €. 13 unità in affitto + T3 privato, giardino, parcheggio. Rendimenti fino al ~18 %.",
+        'ogTitle':     "Vila Anadia · 790.000 € — 13 unità + T3 proprietario ad Anadia, Portogallo",
+        'ogDesc':      "Immobile coliving e coworking ad Anadia, Portogallo. 393 m², 13 unità + T3 proprietario. Rendimenti fino al ~18 %.",
+        'twTitle':     'Vila Anadia · 790.000 € — Anadia, Portogallo',
+        'twDesc':      "13 unità in affitto + T3 proprietario nel centro del Portogallo. Rendimenti fino al ~18 %.",
+        'ogLocale': 'it_IT', 'ogLocaleAlt': 'en_US',
+        'ogImageAlt': "Esterno dell'immobile da investimento ad Anadia, Portogallo",
+        'inLang': 'it', 'imgAlts': {}, 'figcaptions': {}, 'aria': {
+            'Open menu': 'Apri menu', 'Primary': 'Principale', 'Language': 'Lingua',
+            'Gallery filters': 'Filtri galleria', 'Photo viewer': 'Visualizzatore foto',
+            'Close': 'Chiudi', 'Previous': 'Precedente', 'Next': 'Successivo',
+        },
+    },
+    'pl': {
+        'title':       'Nieruchomość Inwestycyjna w Anadii, Portugalia · 790 000 € | Vila Anadia',
+        'description': 'Vila Anadia: nieruchomość inwestycyjna 393 m² w Anadii, Portugalia. 790 000 €. 13 jednostek najmu + prywatne T3, ogród, parking. Stopy zwrotu do ~18 %.',
+        'ogTitle':     'Vila Anadia · 790 000 € — 13 jednostek + T3 właściciela w Anadii, Portugalia',
+        'ogDesc':      'Nieruchomość coliving i coworking w Anadii, Portugalia. 393 m², 13 jednostek + T3 właściciela. Stopy zwrotu do ~18 %.',
+        'twTitle':     'Vila Anadia · 790 000 € — Anadia, Portugalia',
+        'twDesc':      '13 jednostek najmu + T3 właściciela w centrum Portugalii. Stopy zwrotu do ~18 %.',
+        'ogLocale': 'pl_PL', 'ogLocaleAlt': 'en_US',
+        'ogImageAlt': 'Zewnętrze nieruchomości inwestycyjnej w Anadii, Portugalia',
+        'inLang': 'pl', 'imgAlts': {}, 'figcaptions': {}, 'aria': {
+            'Open menu': 'Otwórz menu', 'Primary': 'Główne', 'Language': 'Język',
+            'Gallery filters': 'Filtry galerii', 'Photo viewer': 'Przeglądarka zdjęć',
+            'Close': 'Zamknij', 'Previous': 'Wstecz', 'Next': 'Dalej',
+        },
+    },
+    'el': {
+        'title':       'Επενδυτικό Ακίνητο στην Ανάδια, Πορτογαλία · 790.000 € | Vila Anadia',
+        'description': 'Vila Anadia: επενδυτικό ακίνητο 393 m² στην Ανάδια, Πορτογαλία. 790.000 €. 13 μονάδες ενοικίασης + ιδιωτικό T3, κήπος, πάρκινγκ. Αποδόσεις έως ~18 %.',
+        'ogTitle':     'Vila Anadia · 790.000 € — 13 μονάδες + T3 ιδιοκτήτη στην Ανάδια, Πορτογαλία',
+        'ogDesc':      'Ακίνητο coliving και coworking στην Ανάδια, Πορτογαλία. 393 m², 13 μονάδες + T3 ιδιοκτήτη. Αποδόσεις έως ~18 %.',
+        'twTitle':     'Vila Anadia · 790.000 € — Ανάδια, Πορτογαλία',
+        'twDesc':      '13 μονάδες ενοικίασης + T3 ιδιοκτήτη στο κέντρο της Πορτογαλίας. Αποδόσεις έως ~18 %.',
+        'ogLocale': 'el_GR', 'ogLocaleAlt': 'en_US',
+        'ogImageAlt': 'Εξωτερικό του επενδυτικού ακινήτου στην Ανάδια, Πορτογαλία',
+        'inLang': 'el', 'imgAlts': {}, 'figcaptions': {}, 'aria': {
+            'Open menu': 'Άνοιγμα μενού', 'Primary': 'Κύριο', 'Language': 'Γλώσσα',
+            'Gallery filters': 'Φίλτρα γκαλερί', 'Photo viewer': 'Προβολή φωτογραφιών',
+            'Close': 'Κλείσιμο', 'Previous': 'Προηγούμενο', 'Next': 'Επόμενο',
+        },
+    },
+    'ja': {
+        'title':       'ポルトガル・アナディアの投資物件 · 79万ユーロ | Vila Anadia',
+        'description': 'Vila Anadia：ポルトガル・アナディアの393㎡投資物件。79万ユーロ。13の賃貸ユニット+プライベートT3、庭園、駐車場。利回り最大約18%。',
+        'ogTitle':     'Vila Anadia · 79万ユーロ — ポルトガル・アナディアの13ユニット+オーナーT3',
+        'ogDesc':      'ポルトガル・アナディアのコリビング&コワーキング物件。393㎡、13ユニット+オーナーT3。利回り最大約18%。',
+        'twTitle':     'Vila Anadia · 79万ユーロ — アナディア、ポルトガル',
+        'twDesc':      'ポルトガル中部の13賃貸ユニット+オーナーT3。利回り最大約18%。',
+        'ogLocale': 'ja_JP', 'ogLocaleAlt': 'en_US',
+        'ogImageAlt': 'ポルトガル・アナディアの投資物件の外観',
+        'inLang': 'ja', 'imgAlts': {}, 'figcaptions': {}, 'aria': {
+            'Open menu': 'メニューを開く', 'Primary': 'メイン', 'Language': '言語',
+            'Gallery filters': 'ギャラリーフィルター', 'Photo viewer': '写真ビューア',
+            'Close': '閉じる', 'Previous': '前へ', 'Next': '次へ',
+        },
+    },
+    'ar': {
+        'title':       'عقار استثماري في أنادييا، البرتغال · 790,000 € | Vila Anadia',
+        'description': 'Vila Anadia: عقار استثماري 393 متر مربع في أنادييا، البرتغال. 790,000 €. 13 وحدة إيجار + T3 خاص، حديقة، موقف. عوائد حتى ~18%.',
+        'ogTitle':     'Vila Anadia · 790,000 € — 13 وحدة + T3 مالك في أنادييا، البرتغال',
+        'ogDesc':      'عقار كوليفينج وكوويركينج في أنادييا، البرتغال. 393 متر مربع، 13 وحدة + T3 مالك. عوائد حتى ~18%.',
+        'twTitle':     'Vila Anadia · 790,000 € — أنادييا، البرتغال',
+        'twDesc':      '13 وحدة إيجار + T3 مالك في وسط البرتغال. عوائد حتى ~18%.',
+        'ogLocale': 'ar_SA', 'ogLocaleAlt': 'en_US',
+        'ogImageAlt': 'الواجهة الخارجية للعقار الاستثماري في أنادييا، البرتغال',
+        'inLang': 'ar', 'dir': 'rtl', 'imgAlts': {}, 'figcaptions': {}, 'aria': {
+            'Open menu': 'فتح القائمة', 'Primary': 'رئيسي', 'Language': 'اللغة',
+            'Gallery filters': 'فلاتر المعرض', 'Photo viewer': 'عارض الصور',
+            'Close': 'إغلاق', 'Previous': 'السابق', 'Next': 'التالي',
+        },
+    },
     'es': {
         'title':       'Inmueble de Inversión en Anadia, Portugal · 790.000 € | Vila Anadia',
         'description': 'Vila Anadia: inmueble de 393 m² para inversión en Anadia, Portugal. 790.000 €. 13 unidades de alquiler + T3 privado, jardín, aparcamiento. Rentabilidad hasta ~18 %.',
@@ -290,8 +365,9 @@ def build(lang: str, out_dir: pathlib.Path):
     for en_aria, pt_aria in meta['aria'].items():
         src = src.replace(f'aria-label="{en_aria}"', f'aria-label="{html_mod.escape(pt_aria, quote=True)}"')
 
-    # 6. Update <html lang="">
-    src = re.sub(r'<html lang="[^"]*">', f'<html lang="{lang}">', src)
+    # 6. Update <html lang="">  (add dir="rtl" for RTL languages)
+    dir_attr = f' dir="{meta["dir"]}"' if meta.get('dir') else ''
+    src = re.sub(r'<html lang="[^"]*"[^>]*>', f'<html lang="{lang}"{dir_attr}>', src)
 
     # 7. Update <title>
     src = re.sub(r'<title>[^<]*</title>',
@@ -343,5 +419,5 @@ def build(lang: str, out_dir: pathlib.Path):
 
 
 if __name__ == '__main__':
-    for lang in ('pt', 'de', 'fr', 'es', 'ru', 'uk'):
+    for lang in ('pt', 'de', 'fr', 'es', 'ru', 'uk', 'it', 'pl', 'el', 'ja', 'ar'):
         build(lang, ROOT / lang)
