@@ -8,6 +8,9 @@
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://vilaanadia.com/" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://vilaanadia.com/pt/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vilaanadia.com/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://vilaanadia.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://vilaanadia.com/es/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vilaanadia.com/" />
     <image:image>
       <image:loc>https://vilaanadia.com/images/photo-44.jpg</image:loc>
@@ -26,12 +29,36 @@
       <image:title>Vila Anadia — common kitchen</image:title>
     </image:image>
   </url>
-  <url>
-    <loc>https://vilaanadia.com/pt/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
+  <url><loc>https://vilaanadia.com/pt/</loc><changefreq>weekly</changefreq><priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://vilaanadia.com/" />
     <xhtml:link rel="alternate" hreflang="pt" href="https://vilaanadia.com/pt/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vilaanadia.com/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://vilaanadia.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://vilaanadia.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vilaanadia.com/" />
+  </url>
+  <url><loc>https://vilaanadia.com/de/</loc><changefreq>weekly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vilaanadia.com/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://vilaanadia.com/pt/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vilaanadia.com/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://vilaanadia.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://vilaanadia.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vilaanadia.com/" />
+  </url>
+  <url><loc>https://vilaanadia.com/fr/</loc><changefreq>weekly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vilaanadia.com/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://vilaanadia.com/pt/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vilaanadia.com/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://vilaanadia.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://vilaanadia.com/es/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vilaanadia.com/" />
+  </url>
+  <url><loc>https://vilaanadia.com/es/</loc><changefreq>weekly</changefreq><priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://vilaanadia.com/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://vilaanadia.com/pt/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://vilaanadia.com/de/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://vilaanadia.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://vilaanadia.com/es/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://vilaanadia.com/" />
   </url>
 </urlset>

@@ -309,6 +309,43 @@ p  { margin: 0 0 1em; color: var(--ink-soft); }
   color: var(--ink);
   display: block; margin-top: 4px;
 }
+.hero__price-main {
+  display: flex; flex-direction: column;
+  gap: 4px;
+}
+.hero__price-fx {
+  font-size: .92rem;
+  color: var(--ink-soft);
+  font-variant-numeric: tabular-nums;
+  margin-top: 2px;
+}
+.ccy-switch {
+  display: inline-flex;
+  gap: 2px;
+  margin-top: 8px;
+  padding: 3px;
+  background: rgba(15,27,45,0.05);
+  border-radius: 999px;
+  width: fit-content;
+}
+.ccy-switch__btn {
+  font-family: inherit;
+  font-size: .72rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink-soft);
+  border: none;
+  cursor: pointer;
+  transition: background .15s, color .15s;
+}
+.ccy-switch__btn:hover { color: var(--ink); }
+.ccy-switch__btn.is-active {
+  background: var(--ink);
+  color: #fff;
+}
 .hero__price-meta {
   display: flex; gap: 28px; flex-wrap: wrap;
   margin-left: auto;

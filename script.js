@@ -1,8 +1,8 @@
 // =================== i18n ===================
-const I18N_LANGS = ['en', 'pt'];
+const I18N_LANGS = ['en', 'pt', 'de', 'fr', 'es'];
 const I18N_DEFAULT = 'en';
 
-const I18N_PATH = { pt: '/pt/', en: '/' };
+const I18N_PATH = { en: '/', pt: '/pt/', de: '/de/', fr: '/fr/', es: '/es/' };
 
 function langFromPath() {
   const p = location.pathname;
@@ -277,3 +277,74 @@ if (new URLSearchParams(location.search).get('sent') === '1') {
     success.scrollIntoView({ behavior: 'smooth', block: 'center' });
   }
 }
+
+// =================== Currency switcher (live FX) ===================
+const CCY_FALLBACK = { EUR: 1.0, USD: 1.07, GBP: 0.85, BRL: 5.50 };
+const CCY_LOCALE   = { EUR: 'de-DE', USD: 'en-US', GBP: 'en-GB', BRL: 'pt-BR' };
+let ccyRates = { ...CCY_FALLBACK };
+let ccyCurrent = localStorage.getItem('ccy') || 'EUR';
+
+function fmtCcy(eurAmount, ccy) {
+  const rate = ccyRates[ccy] || 1;
+  const value = eurAmount * rate;
+  try {
+    return new Intl.NumberFormat(CCY_LOCALE[ccy] || 'en-US', {
+      style: 'currency', currency: ccy, maximumFractionDigits: 0,
+    }).format(value);
+  } catch {
+    return `${ccy} ${Math.round(value).toLocaleString()}`;
+  }
+}
+
+function applyCurrency(ccy) {
+  ccyCurrent = ccy;
+  // Update main price display
+  document.querySelectorAll('[data-eur]').forEach(el => {
+    const eur = parseFloat(el.dataset.eur);
+    if (isNaN(eur)) return;
+    if (ccy === 'EUR') {
+      el.textContent = fmtCcy(eur, 'EUR');
+    } else {
+      el.textContent = fmtCcy(eur, 'EUR');
+    }
+  });
+  // Show "≈ $X" approx line if not EUR
+  const fx = document.getElementById('heroFx');
+  if (fx) {
+    if (ccy === 'EUR') {
+      fx.hidden = true;
+      fx.textContent = '';
+    } else {
+      fx.hidden = false;
+      fx.textContent = `≈ ${fmtCcy(parseFloat(document.querySelector('[data-eur]').dataset.eur), ccy)}`;
+    }
+  }
+  // Update active state
+  document.querySelectorAll('.ccy-switch__btn').forEach(b => {
+    b.classList.toggle('is-active', b.dataset.ccy === ccy);
+  });
+}
+
+async function initCurrency() {
+  // Wire buttons immediately so they work before fetch completes
+  document.querySelectorAll('.ccy-switch__btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const ccy = btn.dataset.ccy;
+      localStorage.setItem('ccy', ccy);
+      applyCurrency(ccy);
+    });
+  });
+  applyCurrency(ccyCurrent);
+  // Fetch live rates from Frankfurter (free, ECB rates, no key)
+  try {
+    const res = await fetch('https://api.frankfurter.app/latest?from=EUR&to=USD,GBP,BRL', { cache: 'force-cache' });
+    const data = await res.json();
+    if (data && data.rates) {
+      ccyRates = { EUR: 1.0, ...data.rates };
+      applyCurrency(ccyCurrent);
+    }
+  } catch (e) {
+    // Silent — fallback rates are already in place
+  }
+}
+initCurrency();

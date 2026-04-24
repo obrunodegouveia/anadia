@@ -13,6 +13,9 @@
   <link rel="canonical" href="https://vilaanadia.com/pt/" />
   <link rel="alternate" hreflang="en" href="https://vilaanadia.com/" />
   <link rel="alternate" hreflang="pt" href="https://vilaanadia.com/pt/" />
+  <link rel="alternate" hreflang="de" href="https://vilaanadia.com/de/" />
+  <link rel="alternate" hreflang="fr" href="https://vilaanadia.com/fr/" />
+  <link rel="alternate" hreflang="es" href="https://vilaanadia.com/es/" />
   <link rel="alternate" hreflang="x-default" href="https://vilaanadia.com/" />
 
   <!-- Open Graph -->
@@ -244,6 +247,9 @@
       <div class="lang-switch" role="group" aria-label="Idioma">
         <button type="button" class="lang-switch__btn" data-lang="en" aria-label="English">EN</button>
         <button type="button" class="lang-switch__btn is-active" data-lang="pt" aria-label="Português">PT</button>
+        <button type="button" class="lang-switch__btn" data-lang="de" aria-label="Deutsch">DE</button>
+        <button type="button" class="lang-switch__btn" data-lang="fr" aria-label="Français">FR</button>
+        <button type="button" class="lang-switch__btn" data-lang="es" aria-label="Español">ES</button>
       </div>
       <a href="#contact" class="btn btn--primary nav__cta" data-i18n="nav.cta">Pedir Informação</a>
       <button class="nav__toggle" aria-label="Abrir menu" id="navToggle">
@@ -269,9 +275,16 @@
       </p>
 
       <div class="hero__price">
-        <div>
+        <div class="hero__price-main">
           <span class="hero__price-label" data-i18n="hero.priceLabel">Preço de Venda</span>
-          <span class="hero__price-value">€790,000</span>
+          <span class="hero__price-value" data-eur="790000">€790,000</span>
+          <span class="hero__price-fx" id="heroFx" hidden></span>
+          <div class="ccy-switch" role="group" aria-label="Currency">
+            <button type="button" class="ccy-switch__btn is-active" data-ccy="EUR">EUR</button>
+            <button type="button" class="ccy-switch__btn" data-ccy="USD">USD</button>
+            <button type="button" class="ccy-switch__btn" data-ccy="GBP">GBP</button>
+            <button type="button" class="ccy-switch__btn" data-ccy="BRL">BRL</button>
+          </div>
         </div>
         <div class="hero__price-meta">
           <div><strong>393 m²</strong><span data-i18n="hero.statArea">Área Útil</span></div>

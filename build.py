@@ -132,6 +132,66 @@ META = {
             'Gallery filters': 'Filtros da galeria',
         },
     },
+    'de': {
+        'title':       'Investitionsimmobilie in Anadia, Portugal · 790.000 € | Vila Anadia',
+        'description': 'Vila Anadia: 393-m²-Investitionsimmobilie in Anadia, Portugal. 790.000 €. 13 Mieteinheiten + privates T3, Garten, Parkplatz. Renditen bis zu ~18 %.',
+        'ogTitle':     'Vila Anadia · 790.000 € — 13 Mieteinheiten + Eigentümer-T3 in Anadia, Portugal',
+        'ogDesc':      'Coliving- & Coworking-Immobilie in Anadia, Portugal. 393 m², 13 Einheiten + Eigentümer-T3. Renditen bis zu ~18 %.',
+        'twTitle':     'Vila Anadia · 790.000 € — Anadia, Portugal',
+        'twDesc':      '13 Mieteinheiten + Eigentümer-T3 im Zentrum Portugals. Renditen bis zu ~18 %.',
+        'ogLocale':    'de_DE',
+        'ogLocaleAlt': 'en_US',
+        'ogImageAlt':  'Außenansicht der Investitionsimmobilie in Anadia, Portugal',
+        'inLang':      'de',
+        'imgAlts': {}, 'figcaptions': {}, 'aria': {
+            'Open menu': 'Menü öffnen',
+            'Primary':   'Hauptmenü',
+            'Language':  'Sprache',
+            'Gallery filters': 'Galeriefilter',
+            'Photo viewer': 'Foto-Viewer',
+            'Close': 'Schließen', 'Previous': 'Zurück', 'Next': 'Weiter',
+        },
+    },
+    'fr': {
+        'title':       "Bien d'Investissement à Anadia, Portugal · 790 000 € | Vila Anadia",
+        'description': "Vila Anadia : bien d'investissement de 393 m² à Anadia, Portugal. 790 000 €. 13 unités locatives + T3 privé, jardin, parking. Rendements jusqu'à ~18 %.",
+        'ogTitle':     'Vila Anadia · 790 000 € — 13 Unités + T3 propriétaire à Anadia, Portugal',
+        'ogDesc':      "Bien de coliving & coworking à Anadia, Portugal. 393 m², 13 unités + T3 propriétaire. Rendements jusqu'à ~18 %.",
+        'twTitle':     'Vila Anadia · 790 000 € — Anadia, Portugal',
+        'twDesc':      "13 unités locatives + T3 propriétaire au centre du Portugal. Rendements jusqu'à ~18 %.",
+        'ogLocale':    'fr_FR',
+        'ogLocaleAlt': 'en_US',
+        'ogImageAlt':  "Extérieur du bien d'investissement à Anadia, Portugal",
+        'inLang':      'fr',
+        'imgAlts': {}, 'figcaptions': {}, 'aria': {
+            'Open menu': 'Ouvrir le menu',
+            'Primary':   'Principal',
+            'Language':  'Langue',
+            'Gallery filters': 'Filtres de galerie',
+            'Photo viewer': 'Visionneuse de photos',
+            'Close': 'Fermer', 'Previous': 'Précédent', 'Next': 'Suivant',
+        },
+    },
+    'es': {
+        'title':       'Inmueble de Inversión en Anadia, Portugal · 790.000 € | Vila Anadia',
+        'description': 'Vila Anadia: inmueble de 393 m² para inversión en Anadia, Portugal. 790.000 €. 13 unidades de alquiler + T3 privado, jardín, aparcamiento. Rentabilidad hasta ~18 %.',
+        'ogTitle':     'Vila Anadia · 790.000 € — 13 unidades + T3 del propietario en Anadia, Portugal',
+        'ogDesc':      'Inmueble de coliving y coworking en Anadia, Portugal. 393 m², 13 unidades + T3. Rentabilidad hasta ~18 %.',
+        'twTitle':     'Vila Anadia · 790.000 € — Anadia, Portugal',
+        'twDesc':      '13 unidades de alquiler + T3 del propietario en el centro de Portugal. Rentabilidad hasta ~18 %.',
+        'ogLocale':    'es_ES',
+        'ogLocaleAlt': 'en_US',
+        'ogImageAlt':  'Exterior del inmueble de inversión en Anadia, Portugal',
+        'inLang':      'es',
+        'imgAlts': {}, 'figcaptions': {}, 'aria': {
+            'Open menu': 'Abrir menú',
+            'Primary':   'Principal',
+            'Language':  'Idioma',
+            'Gallery filters': 'Filtros de galería',
+            'Photo viewer': 'Visor de fotos',
+            'Close': 'Cerrar', 'Previous': 'Anterior', 'Next': 'Siguiente',
+        },
+    },
 }
 
 def build(lang: str, out_dir: pathlib.Path):
@@ -247,4 +307,5 @@ def build(lang: str, out_dir: pathlib.Path):
 
 
 if __name__ == '__main__':
-    build('pt', ROOT / 'pt')
+    for lang in ('pt', 'de', 'fr', 'es'):
+        build(lang, ROOT / lang)
