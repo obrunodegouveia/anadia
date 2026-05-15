@@ -420,7 +420,8 @@ def build(lang: str, out_dir: pathlib.Path):
         extras = (ROOT / 'pt_extras.html').read_text(encoding='utf-8')
         src = src.replace('<!-- PT_EXTRAS -->', extras)
         pt_nav = (
-            '<a href="/pt/alojamento-anadia/">Alojamento</a>\n'
+            '<a href="/pt/alojamento-anadia/">Alojamento em Anadia</a>\n'
+            '        <a href="/pt/alojamento-trabalhadores/">Para Empresas</a>\n'
             '        <a href="/pt/atracoes/">Atrações</a>'
         )
         src = src.replace('<!-- PT_NAV_LINKS -->', pt_nav)

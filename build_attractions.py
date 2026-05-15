@@ -195,7 +195,8 @@ HEAD_TMPL = '''<!DOCTYPE html>
           <a href="/pt/#highlights">Destaques</a>
           <a href="/pt/#investment">Investimento</a>
           <a href="/pt/#layout">Planta</a>
-          <a href="/pt/alojamento-anadia/">Alojamento</a>
+          <a href="/pt/alojamento-anadia/">Alojamento em Anadia</a>
+          <a href="/pt/alojamento-trabalhadores/">Para Empresas</a>
           <a href="/pt/atracoes/" class="is-active">Atrações</a>
           <a href="/pt/#sellers">Vendedores</a>
           <a href="/pt/#contact">Contacto</a>

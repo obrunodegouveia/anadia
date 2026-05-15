@@ -256,7 +256,8 @@
     "floorT3.li4": "🌳 Private terrace + independent entrance",
     "seller2.badge": "Main contact",
     "nav.sellers": "Sellers",
-    "nav.contact": "Contact"
+    "nav.contact": "Contact",
+    "nav.business": "For Business"
   },
   "pt": {
     "nav.highlights": "Destaques",
@@ -515,7 +516,8 @@
     "floorT3.li4": "🌳 Terraço privado + entrada independente",
     "seller2.badge": "Contacto principal",
     "nav.sellers": "Vendedores",
-    "nav.contact": "Contacto"
+    "nav.contact": "Contacto",
+    "nav.business": "Para Empresas"
   },
   "de": {
     "nav.highlights": "Highlights",
@@ -774,7 +776,8 @@
     "floorT3.li4": "🌳 Private terrace + independent entrance",
     "seller2.badge": "Hauptkontakt",
     "nav.sellers": "Verkäufer",
-    "nav.contact": "Kontakt"
+    "nav.contact": "Kontakt",
+    "nav.business": "Für Unternehmen"
   },
   "fr": {
     "nav.highlights": "Points forts",
@@ -1033,7 +1036,8 @@
     "floorT3.li4": "🌳 Private terrace + independent entrance",
     "seller2.badge": "Contact principal",
     "nav.sellers": "Vendeurs",
-    "nav.contact": "Contact"
+    "nav.contact": "Contact",
+    "nav.business": "Pour Entreprises"
   },
   "es": {
     "nav.highlights": "Destacados",
@@ -1292,7 +1296,8 @@
     "floorT3.li4": "🌳 Private terrace + independent entrance",
     "seller2.badge": "Contacto principal",
     "nav.sellers": "Vendedores",
-    "nav.contact": "Contacto"
+    "nav.contact": "Contacto",
+    "nav.business": "Para Empresas"
   },
   "ru": {
     "nav.highlights": "Преимущества",
@@ -1551,7 +1556,8 @@
     "floorT3.li4": "🌳 Private terrace + independent entrance",
     "seller2.badge": "Главный контакт",
     "nav.sellers": "Продавцы",
-    "nav.contact": "Контакт"
+    "nav.contact": "Контакт",
+    "nav.business": "Для Бизнеса"
   },
   "uk": {
     "nav.highlights": "Переваги",
@@ -1810,7 +1816,8 @@
     "floorT3.li4": "🌳 Private terrace + independent entrance",
     "seller2.badge": "Головний контакт",
     "nav.sellers": "Продавці",
-    "nav.contact": "Контакт"
+    "nav.contact": "Контакт",
+    "nav.business": "Для Бізнесу"
   },
   "it": {
     "nav.highlights": "Punti forti",
@@ -2069,7 +2076,8 @@
     "floorT3.li4": "🌳 Private terrace + independent entrance",
     "seller2.badge": "Contatto principale",
     "nav.sellers": "Venditori",
-    "nav.contact": "Contatto"
+    "nav.contact": "Contatto",
+    "nav.business": "Per Aziende"
   },
   "pl": {
     "nav.highlights": "Najważniejsze",
@@ -2328,7 +2336,8 @@
     "floorT3.li4": "🌳 Private terrace + independent entrance",
     "seller2.badge": "Główny kontakt",
     "nav.sellers": "Sprzedawcy",
-    "nav.contact": "Kontakt"
+    "nav.contact": "Kontakt",
+    "nav.business": "Dla Firm"
   },
   "el": {
     "nav.highlights": "Χαρακτηριστικά",
@@ -2587,7 +2596,8 @@
     "floorT3.li4": "🌳 Private terrace + independent entrance",
     "seller2.badge": "Κύρια επαφή",
     "nav.sellers": "Πωλητές",
-    "nav.contact": "Επικοινωνία"
+    "nav.contact": "Επικοινωνία",
+    "nav.business": "Για Επιχειρήσεις"
   },
   "ja": {
     "nav.highlights": "特徴",
@@ -2846,7 +2856,8 @@
     "floorT3.li4": "🌳 Private terrace + independent entrance",
     "seller2.badge": "メイン連絡先",
     "nav.sellers": "売主",
-    "nav.contact": "連絡先"
+    "nav.contact": "連絡先",
+    "nav.business": "企業向け"
   },
   "ar": {
     "nav.highlights": "المميزات",
@@ -3105,7 +3116,8 @@
     "floorT3.li4": "🌳 Private terrace + independent entrance",
     "seller2.badge": "جهة الاتصال الرئيسية",
     "nav.sellers": "البائعون",
-    "nav.contact": "اتصال"
+    "nav.contact": "اتصال",
+    "nav.business": "للشركات"
   },
   "no": {
     "nav.highlights": "Høydepunkter",
@@ -3364,7 +3376,8 @@
     "floorT3.li4": "🌳 Private terrace + independent entrance",
     "seller2.badge": "Hovedkontakt",
     "nav.sellers": "Selgere",
-    "nav.contact": "Kontakt"
+    "nav.contact": "Kontakt",
+    "nav.business": "For Bedrifter"
   },
   "sv": {
     "nav.highlights": "Höjdpunkter",
@@ -3623,7 +3636,8 @@
     "floorT3.li4": "🌳 Private terrace + independent entrance",
     "seller2.badge": "Huvudkontakt",
     "nav.sellers": "Säljare",
-    "nav.contact": "Kontakt"
+    "nav.contact": "Kontakt",
+    "nav.business": "För Företag"
   },
   "da": {
     "nav.highlights": "Højdepunkter",
@@ -3882,7 +3896,8 @@
     "floorT3.li4": "🌳 Private terrace + independent entrance",
     "seller2.badge": "Hovedkontakt",
     "nav.sellers": "Sælgere",
-    "nav.contact": "Kontakt"
+    "nav.contact": "Kontakt",
+    "nav.business": "For Virksomheder"
   },
   "nl": {
     "nav.highlights": "Hoogtepunten",
@@ -4141,7 +4156,8 @@
     "floorT3.li4": "🌳 Private terrace + independent entrance",
     "seller2.badge": "Hoofdcontact",
     "nav.sellers": "Verkopers",
-    "nav.contact": "Contact"
+    "nav.contact": "Contact",
+    "nav.business": "Voor Bedrijven"
   },
   "hu": {
     "nav.highlights": "Jellemzők",
@@ -4400,7 +4416,8 @@
     "floorT3.li4": "🌳 Private terrace + independent entrance",
     "seller2.badge": "Fő kapcsolattartó",
     "nav.sellers": "Eladók",
-    "nav.contact": "Kapcsolat"
+    "nav.contact": "Kapcsolat",
+    "nav.business": "Cégeknek"
   },
   "bg": {
     "nav.highlights": "Акценти",
@@ -4659,7 +4676,8 @@
     "floorT3.li4": "🌳 Private terrace + independent entrance",
     "seller2.badge": "Основен контакт",
     "nav.sellers": "Продавачи",
-    "nav.contact": "Контакт"
+    "nav.contact": "Контакт",
+    "nav.business": "За Бизнеса"
   },
   "ro": {
     "nav.highlights": "Caracteristici",
@@ -4918,6 +4936,7 @@
     "floorT3.li4": "🌳 Private terrace + independent entrance",
     "seller2.badge": "Contact principal",
     "nav.sellers": "Vânzători",
-    "nav.contact": "Contact"
+    "nav.contact": "Contact",
+    "nav.business": "Pentru Afaceri"
   }
 }
