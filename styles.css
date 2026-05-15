@@ -1284,6 +1284,15 @@ p  { margin: 0 0 1em; color: var(--ink-soft); }
   .nav__toggle { display: flex; }
   .lang-trigger { margin-left: auto; }
 
+  /* Disable backdrop-filter on mobile — it creates a containing block
+     that traps position:fixed children inside the 72px nav bar.
+     Desktop keeps the nice blur. */
+  .nav {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: var(--bg);
+  }
+
   /* Full-screen drawer panel */
   .nav__panel {
     display: flex;
