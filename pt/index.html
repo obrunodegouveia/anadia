@@ -251,16 +251,22 @@
         <span class="nav__brand-mark">A</span>
         <span class="nav__brand-text">Vila&nbsp;Anadia</span>
       </a>
-      <nav class="nav__links" aria-label="Principal">
-        <a href="#highlights" data-i18n="nav.highlights">Destaques</a>
-        <a href="#investment" data-i18n="nav.investment">Investimento</a>
-        <a href="#layout" data-i18n="nav.layout">Planta</a>
-        <a href="#use-cases" data-i18n="nav.useCases">Usos</a>
-        <a href="#location" data-i18n="nav.location">Localização</a>
-        <a href="#gallery" data-i18n="nav.gallery">Galeria</a>
-        <a href="/pt/alojamento-anadia/">Alojamento</a>
+      <div class="nav__panel" id="navPanel">
+        <button class="nav__close" id="navClose" aria-label="Close menu" type="button">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+        <nav class="nav__links" aria-label="Principal">
+          <a href="#highlights" data-i18n="nav.highlights">Destaques</a>
+          <a href="#investment" data-i18n="nav.investment">Investimento</a>
+          <a href="#layout" data-i18n="nav.layout">Planta</a>
+          <a href="#use-cases" data-i18n="nav.useCases">Usos</a>
+          <a href="#location" data-i18n="nav.location">Localização</a>
+          <a href="#gallery" data-i18n="nav.gallery">Galeria</a>
+          <a href="/pt/alojamento-anadia/">Alojamento</a>
         <a href="/pt/atracoes/">Atrações</a>
-      </nav>
+        </nav>
+        <a href="#contact" class="btn btn--primary nav__cta" data-i18n="nav.cta">Pedir Informação</a>
+      </div>
       <button type="button" class="lang-trigger" id="langTrigger" aria-haspopup="dialog" aria-label="Choose language">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <circle cx="12" cy="12" r="10"/>
@@ -270,11 +276,11 @@
         </svg>
         <span class="lang-trigger__code" id="langTriggerCode">EN</span>
       </button>
-      <a href="#contact" class="btn btn--primary nav__cta" data-i18n="nav.cta">Pedir Informação</a>
-      <button class="nav__toggle" aria-label="Abrir menu" id="navToggle">
+      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navPanel" id="navToggle" type="button">
         <span></span><span></span><span></span>
       </button>
     </div>
+    <div class="nav__backdrop" id="navBackdrop" aria-hidden="true"></div>
   </header>
 
   <!-- ================= HERO ================= -->

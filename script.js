@@ -146,15 +146,72 @@ async function initI18n() {
 }
 initI18n();
 
-// Mobile nav toggle
-const nav = document.getElementById('nav');
-const toggle = document.getElementById('navToggle');
-if (toggle && nav) {
-  toggle.addEventListener('click', () => nav.classList.toggle('is-open'));
-  nav.querySelectorAll('.nav__links a, .nav__cta').forEach(a => {
-    a.addEventListener('click', () => nav.classList.remove('is-open'));
-  });
+// =================== Mobile drawer ===================
+const nav         = document.getElementById('nav');
+const toggle      = document.getElementById('navToggle');
+const navClose    = document.getElementById('navClose');
+const navBackdrop = document.getElementById('navBackdrop');
+const navPanel    = document.getElementById('navPanel');
+
+function openDrawer() {
+  if (!nav) return;
+  nav.classList.add('is-open');
+  document.body.classList.add('is-nav-open');
+  toggle?.setAttribute('aria-expanded', 'true');
+  // Focus first link for keyboard users
+  const firstLink = navPanel?.querySelector('.nav__links a');
+  firstLink?.focus();
 }
+function closeDrawer() {
+  if (!nav) return;
+  nav.classList.remove('is-open');
+  document.body.classList.remove('is-nav-open');
+  toggle?.setAttribute('aria-expanded', 'false');
+  toggle?.focus();
+}
+function toggleDrawer() {
+  if (nav?.classList.contains('is-open')) closeDrawer();
+  else openDrawer();
+}
+
+toggle?.addEventListener('click', toggleDrawer);
+navClose?.addEventListener('click', closeDrawer);
+navBackdrop?.addEventListener('click', closeDrawer);
+
+// Close on link / CTA click
+nav?.querySelectorAll('.nav__links a, .nav__cta').forEach(a => {
+  a.addEventListener('click', () => {
+    if (nav.classList.contains('is-open')) closeDrawer();
+  });
+});
+
+// ESC closes drawer (separate from lightbox/modal handlers)
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && nav?.classList.contains('is-open')) {
+    closeDrawer();
+  }
+});
+
+// Trap focus inside drawer when open (basic)
+navPanel?.addEventListener('keydown', e => {
+  if (e.key !== 'Tab' || !nav.classList.contains('is-open')) return;
+  const focusable = navPanel.querySelectorAll('a, button');
+  if (!focusable.length) return;
+  const first = focusable[0];
+  const last  = focusable[focusable.length - 1];
+  if (e.shiftKey && document.activeElement === first) {
+    e.preventDefault();
+    last.focus();
+  } else if (!e.shiftKey && document.activeElement === last) {
+    e.preventDefault();
+    first.focus();
+  }
+});
+
+// Auto-close if window resizes past mobile breakpoint
+window.addEventListener('resize', () => {
+  if (window.innerWidth > 880 && nav?.classList.contains('is-open')) closeDrawer();
+});
 
 // Footer year
 const yr = document.getElementById('year');

@@ -47,24 +47,30 @@
         <span class="nav__brand-mark">A</span>
         <span class="nav__brand-text">Vila&nbsp;Anadia</span>
       </a>
-      <nav class="nav__links" aria-label="Principal">
-        <a href="/pt/#highlights">Destaques</a>
-        <a href="/pt/#investment">Investimento</a>
-        <a href="/pt/#layout">Planta</a>
-        <a href="/pt/alojamento-anadia/">Alojamento</a>
-        <a href="/pt/atracoes/" class="is-active">Atrações</a>
-      </nav>
+      <div class="nav__panel" id="navPanel">
+        <button class="nav__close" id="navClose" aria-label="Fechar menu" type="button">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+        <nav class="nav__links" aria-label="Principal">
+          <a href="/pt/#highlights">Destaques</a>
+          <a href="/pt/#investment">Investimento</a>
+          <a href="/pt/#layout">Planta</a>
+          <a href="/pt/alojamento-anadia/">Alojamento</a>
+          <a href="/pt/atracoes/" class="is-active">Atrações</a>
+        </nav>
+        <a href="/pt/#contact" class="btn btn--primary nav__cta">Pedir Informação</a>
+      </div>
       <button type="button" class="lang-trigger" id="langTrigger" aria-haspopup="dialog" aria-label="Escolher idioma">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
           <circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20"/><path d="M12 2a15 15 0 0 0 0 20"/>
         </svg>
         <span class="lang-trigger__code" id="langTriggerCode">PT</span>
       </button>
-      <a href="/pt/#contact" class="btn btn--primary nav__cta">Pedir Informação</a>
-      <button class="nav__toggle" aria-label="Abrir menu" id="navToggle">
+      <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navPanel" id="navToggle" type="button">
         <span></span><span></span><span></span>
       </button>
     </div>
+    <div class="nav__backdrop" id="navBackdrop" aria-hidden="true"></div>
   </header>
 
   <section class="subpage-hero">
