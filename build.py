@@ -415,6 +415,11 @@ def build(lang: str, out_dir: pathlib.Path):
     dict_ = I18N[lang]
     meta = META[lang]
 
+    # 0. Inject PT-only extras (Anadia attractions section)
+    if lang == 'pt':
+        extras = (ROOT / 'pt_extras.html').read_text(encoding='utf-8')
+        src = src.replace('<!-- PT_EXTRAS -->', extras)
+
     # 1. Make all relative asset paths absolute (so they resolve from /pt/)
     src = re.sub(r'src="images/', 'src="/images/', src)
     src = re.sub(r'srcset="images/', 'srcset="/images/', src)

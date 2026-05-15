@@ -1494,6 +1494,58 @@ p  { margin: 0 0 1em; color: var(--ink-soft); }
   .seller__contact { justify-content: center; }
 }
 
+/* ==================== ATTRACTIONS (PT-only section) ==================== */
+.attractions__group {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 28px 32px;
+  margin-bottom: 18px;
+}
+.attractions__group h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--ink);
+}
+.attractions__group p {
+  margin-bottom: 14px;
+  font-size: .98rem;
+}
+.attractions__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+.attractions__list li {
+  font-size: .95rem;
+  padding-left: 18px;
+  position: relative;
+  color: var(--ink-soft);
+}
+.attractions__list li::before {
+  content: "›";
+  position: absolute;
+  left: 0; top: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+.attractions__list a {
+  color: var(--accent-deep);
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: rgba(184,137,90,.3);
+  text-underline-offset: 2px;
+}
+.attractions__list a:hover {
+  color: var(--ink);
+  text-decoration-color: currentColor;
+}
+@media (max-width: 700px) {
+  .attractions__group { padding: 24px 20px; }
+}
+
 /* ==================== RTL OVERRIDES (Arabic) ==================== */
 [dir="rtl"] body { text-align: right; }
 [dir="rtl"] .nav__inner,
