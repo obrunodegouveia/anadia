@@ -194,7 +194,7 @@ HEAD_TMPL = '''<!DOCTYPE html>
         <a href="/pt/#highlights">Destaques</a>
         <a href="/pt/#investment">Investimento</a>
         <a href="/pt/#layout">Planta</a>
-        <a href="/pt/#location">Localização</a>
+        <a href="/pt/alojamento-anadia/">Alojamento</a>
         <a href="/pt/atracoes/" class="is-active">Atrações</a>
       </nav>
       <button type="button" class="lang-trigger" id="langTrigger" aria-haspopup="dialog" aria-label="Escolher idioma">
