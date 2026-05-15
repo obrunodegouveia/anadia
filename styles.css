@@ -1284,42 +1284,57 @@ p  { margin: 0 0 1em; color: var(--ink-soft); }
   .nav__toggle { display: flex; }
   .lang-trigger { margin-left: auto; }
 
-  /* Hide trigger button until drawer logic ready (prevents flash) */
+  /* Full-screen drawer panel */
   .nav__panel {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: min(360px, 88vw);
+    inset: 0;
+    width: 100%;
+    height: 100%;
     background: var(--bg);
-    box-shadow: -20px 0 60px rgba(15, 27, 45, .15);
     transform: translateX(100%);
-    transition: transform .35s cubic-bezier(.2, .8, .2, 1);
+    transition: transform .4s cubic-bezier(.2, .8, .2, 1), opacity .25s ease;
+    opacity: 0;
     z-index: 200;
-    padding: 80px 28px 28px;
+    padding: 96px 32px 48px;
     overflow-y: auto;
-    will-change: transform;
+    will-change: transform, opacity;
+    text-align: center;
   }
-  .nav.is-open .nav__panel { transform: translateX(0); }
+  .nav.is-open .nav__panel {
+    transform: translateX(0);
+    opacity: 1;
+  }
 
   .nav__links {
     flex-direction: column;
+    align-items: center;
     gap: 0;
-    margin-bottom: 28px;
+    margin: auto 0;
+    width: 100%;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .nav__links a {
-    padding: 14px 4px;
-    font-size: 1.05rem;
+    display: block;
+    width: 100%;
+    padding: 18px 0;
+    font-family: var(--font-serif);
+    font-size: 1.6rem;
+    font-weight: 500;
+    letter-spacing: -.01em;
     color: var(--ink);
     border-bottom: 1px solid var(--line);
-    transition: color .15s, padding .15s;
+    transition: color .2s ease, transform .2s ease;
   }
   .nav__links a:last-child { border-bottom: none; }
-  .nav__links a:hover {
+  .nav__links a:hover,
+  .nav__links a:focus-visible {
     color: var(--accent-deep);
-    padding-left: 8px;
+    transform: translateY(-1px);
   }
   .nav__links a.is-active {
     color: var(--accent-deep);
@@ -1329,12 +1344,15 @@ p  { margin: 0 0 1em; color: var(--ink-soft); }
 
   .nav__cta {
     display: inline-flex;
-    margin-top: auto;
-    padding: 14px 24px;
+    margin: 36px auto 0;
+    padding: 16px 40px;
     font-size: 1rem;
-    text-align: center;
+    align-self: center;
     justify-content: center;
   }
+
+  /* Hide redundant backdrop — drawer is opaque full-screen */
+  .nav__backdrop { display: none !important; }
 }
 
 /* Body scroll lock when drawer is open */
