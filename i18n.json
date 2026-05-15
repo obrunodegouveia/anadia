@@ -230,11 +230,16 @@
     "foot.lc3": "Live Airbnb listing",
     "foot.lc4": "Download brochure (PDF)",
     "foot.disc": "Information provided is indicative — verify with full documentation before purchase.",
-    "seller.kicker": "Meet the seller",
+    "seller.kicker": "Meet the sellers",
     "seller.title": "Bruno Gouveia",
     "seller.body": "Founder of eSIMpass. I built and operated this property myself — now selling to focus on the next venture. Happy to walk you through everything personally, in person or by video call.",
     "seller.wa": "Message Bruno",
-    "seller.call": "Call +351 963 132 452"
+    "seller.call": "Call +351 963 132 452",
+    "seller2.title": "Daniel Batista",
+    "seller2.body": "Native of Anadia, co-selling with Bruno. Born and raised in town — happy to answer anything about the area, the neighbourhood, and what daily life is like here.",
+    "seller2.wa": "Message Daniel",
+    "seller2.call": "Call +351 932 855 243",
+    "seller2.linkedin": "View LinkedIn"
   },
   "pt": {
     "nav.highlights": "Destaques",
@@ -467,11 +472,16 @@
     "foot.lc3": "Anúncio no Airbnb",
     "foot.lc4": "Descarregar brochura (PDF)",
     "foot.disc": "Informação indicativa — verifique a documentação completa antes da compra.",
-    "seller.kicker": "Conheça o vendedor",
+    "seller.kicker": "Conheça os vendedores",
     "seller.title": "Bruno Gouveia",
     "seller.body": "Fundador da eSIMpass. Construí e operei este imóvel pessoalmente — vendo agora para focar no próximo projeto. Disponível para falar consigo presencialmente ou por videochamada.",
     "seller.wa": "Falar com Bruno",
-    "seller.call": "Ligar +351 963 132 452"
+    "seller.call": "Ligar +351 963 132 452",
+    "seller2.title": "Daniel Batista",
+    "seller2.body": "Natural de Anadia, co-vendedor com o Bruno. Nascido e criado na vila — disponível para responder a tudo sobre a zona, a vizinhança e o dia-a-dia local.",
+    "seller2.wa": "Falar com Daniel",
+    "seller2.call": "Ligar +351 932 855 243",
+    "seller2.linkedin": "Ver LinkedIn"
   },
   "de": {
     "nav.highlights": "Highlights",
@@ -704,11 +714,16 @@
     "foot.lc3": "Live Airbnb-Inserat",
     "foot.lc4": "Broschüre herunterladen (PDF)",
     "foot.disc": "Die bereitgestellten Informationen sind indikativ — vor dem Kauf mit vollständiger Dokumentation prüfen.",
-    "seller.kicker": "Lernen Sie den Verkäufer kennen",
+    "seller.kicker": "Lernen Sie die Verkäufer kennen",
     "seller.title": "Bruno Gouveia",
     "seller.body": "Gründer von eSIMpass. Ich habe diese Immobilie selbst aufgebaut und betrieben — jetzt verkaufe ich, um mich auf das nächste Projekt zu konzentrieren. Gerne führe ich Sie persönlich durch alles, vor Ort oder per Videoanruf.",
     "seller.wa": "Bruno schreiben",
-    "seller.call": "Anrufen +351 963 132 452"
+    "seller.call": "Anrufen +351 963 132 452",
+    "seller2.title": "Daniel Batista",
+    "seller2.body": "Gebürtig aus Anadia, Mitverkäufer mit Bruno. In der Stadt geboren und aufgewachsen — beantwortet gerne alle Fragen zur Gegend, zur Nachbarschaft und zum Alltag vor Ort.",
+    "seller2.wa": "Daniel schreiben",
+    "seller2.call": "Anrufen +351 932 855 243",
+    "seller2.linkedin": "LinkedIn ansehen"
   },
   "fr": {
     "nav.highlights": "Points forts",
@@ -941,11 +956,16 @@
     "foot.lc3": "Annonce Airbnb en direct",
     "foot.lc4": "Télécharger la brochure (PDF)",
     "foot.disc": "Informations indicatives — vérifiez la documentation complète avant l'achat.",
-    "seller.kicker": "Rencontrez le vendeur",
+    "seller.kicker": "Rencontrez les vendeurs",
     "seller.title": "Bruno Gouveia",
     "seller.body": "Fondateur d'eSIMpass. J'ai construit et exploité cette propriété moi-même — je vends maintenant pour me concentrer sur le prochain projet. Heureux de tout vous expliquer personnellement, en personne ou par appel vidéo.",
     "seller.wa": "Écrire à Bruno",
-    "seller.call": "Appeler +351 963 132 452"
+    "seller.call": "Appeler +351 963 132 452",
+    "seller2.title": "Daniel Batista",
+    "seller2.body": "Natif d'Anadia, co-vendeur avec Bruno. Né et élevé dans la ville — se fera un plaisir de répondre à toutes vos questions sur le quartier et la vie locale.",
+    "seller2.wa": "Écrire à Daniel",
+    "seller2.call": "Appeler +351 932 855 243",
+    "seller2.linkedin": "Voir LinkedIn"
   },
   "es": {
     "nav.highlights": "Destacados",
@@ -1178,11 +1198,16 @@
     "foot.lc3": "Anuncio en vivo de Airbnb",
     "foot.lc4": "Descargar folleto (PDF)",
     "foot.disc": "Información indicativa — verifica la documentación completa antes de la compra.",
-    "seller.kicker": "Conoce al vendedor",
+    "seller.kicker": "Conoce a los vendedores",
     "seller.title": "Bruno Gouveia",
     "seller.body": "Fundador de eSIMpass. Construí y operé esta propiedad yo mismo — ahora vendo para enfocarme en el próximo proyecto. Encantado de explicarte todo personalmente, en persona o por videollamada.",
     "seller.wa": "Escribir a Bruno",
-    "seller.call": "Llamar +351 963 132 452"
+    "seller.call": "Llamar +351 963 132 452",
+    "seller2.title": "Daniel Batista",
+    "seller2.body": "Natural de Anadia, covendedor con Bruno. Nacido y criado en la villa — encantado de contarte todo sobre la zona, los vecinos y el día a día.",
+    "seller2.wa": "Escribir a Daniel",
+    "seller2.call": "Llamar +351 932 855 243",
+    "seller2.linkedin": "Ver LinkedIn"
   },
   "ru": {
     "nav.highlights": "Преимущества",
@@ -1415,11 +1440,16 @@
     "foot.lc3": "Объявление на Airbnb",
     "foot.lc4": "Скачать брошюру (PDF)",
     "foot.disc": "Информация ориентировочная — проверьте полную документацию перед покупкой.",
-    "seller.kicker": "Познакомьтесь с продавцом",
+    "seller.kicker": "Познакомьтесь с продавцами",
     "seller.title": "Бруно Говейя",
     "seller.body": "Основатель eSIMpass. Я лично построил и управлял этим объектом — теперь продаю, чтобы сосредоточиться на следующем проекте. Готов лично провести вас по всему — лично или по видеосвязи.",
     "seller.wa": "Написать Бруно",
-    "seller.call": "Позвонить +351 963 132 452"
+    "seller.call": "Позвонить +351 963 132 452",
+    "seller2.title": "Даниэл Батишта",
+    "seller2.body": "Уроженец Анадии, совместно продаёт с Бруну. Родился и вырос в городе — охотно расскажет всё о районе, соседях и повседневной жизни.",
+    "seller2.wa": "Написать Даниэлю",
+    "seller2.call": "Позвонить +351 932 855 243",
+    "seller2.linkedin": "Открыть LinkedIn"
   },
   "uk": {
     "nav.highlights": "Переваги",
@@ -1652,11 +1682,16 @@
     "foot.lc3": "Оголошення на Airbnb",
     "foot.lc4": "Завантажити брошуру (PDF)",
     "foot.disc": "Інформація орієнтовна — перевірте повну документацію перед купівлею.",
-    "seller.kicker": "Знайомтеся з продавцем",
+    "seller.kicker": "Знайомтеся з продавцями",
     "seller.title": "Бруно Говейя",
     "seller.body": "Засновник eSIMpass. Я особисто збудував і керував цим об'єктом — зараз продаю, щоб зосередитися на наступному проєкті. Радо проведу вас по всьому особисто — на місці або через відеодзвінок.",
     "seller.wa": "Написати Бруно",
-    "seller.call": "Зателефонувати +351 963 132 452"
+    "seller.call": "Зателефонувати +351 963 132 452",
+    "seller2.title": "Даніел Батішта",
+    "seller2.body": "Уродженець Анадії, спільно продає з Бруну. Народився і виріс у місті — охоче розповість усе про район, сусідів і повсякденне життя.",
+    "seller2.wa": "Написати Даніелю",
+    "seller2.call": "Зателефонувати +351 932 855 243",
+    "seller2.linkedin": "Відкрити LinkedIn"
   },
   "it": {
     "nav.highlights": "Punti forti",
@@ -1889,11 +1924,16 @@
     "foot.lc3": "Annuncio Airbnb live",
     "foot.lc4": "Scarica brochure (PDF)",
     "foot.disc": "Informazioni indicative — verifica documentazione completa prima dell'acquisto.",
-    "seller.kicker": "Conosci il venditore",
+    "seller.kicker": "Conosci i venditori",
     "seller.title": "Bruno Gouveia",
     "seller.body": "Fondatore di eSIMpass. Ho costruito e gestito personalmente questa proprietà — ora vendo per concentrarmi sul prossimo progetto. Felice di accompagnarti personalmente in tutto, di persona o per videochiamata.",
     "seller.wa": "Scrivi a Bruno",
-    "seller.call": "Chiama +351 963 132 452"
+    "seller.call": "Chiama +351 963 132 452",
+    "seller2.title": "Daniel Batista",
+    "seller2.body": "Originario di Anadia, covenditore con Bruno. Nato e cresciuto in città — felice di rispondere a qualunque domanda sulla zona, il vicinato e la vita quotidiana.",
+    "seller2.wa": "Scrivi a Daniel",
+    "seller2.call": "Chiama +351 932 855 243",
+    "seller2.linkedin": "Vedi LinkedIn"
   },
   "pl": {
     "nav.highlights": "Najważniejsze",
@@ -2126,11 +2166,16 @@
     "foot.lc3": "Ogłoszenie Airbnb na żywo",
     "foot.lc4": "Pobierz broszurę (PDF)",
     "foot.disc": "Informacje orientacyjne — sprawdź pełną dokumentację przed zakupem.",
-    "seller.kicker": "Poznaj sprzedawcę",
+    "seller.kicker": "Poznaj sprzedawców",
     "seller.title": "Bruno Gouveia",
     "seller.body": "Założyciel eSIMpass. Sam zbudowałem i prowadziłem tę nieruchomość — teraz sprzedaję, aby skupić się na kolejnym projekcie. Chętnie oprowadzę po wszystkim osobiście, na miejscu lub przez wideorozmowę.",
     "seller.wa": "Napisz do Bruno",
-    "seller.call": "Zadzwoń +351 963 132 452"
+    "seller.call": "Zadzwoń +351 963 132 452",
+    "seller2.title": "Daniel Batista",
+    "seller2.body": "Rodowity mieszkaniec Anadii, współsprzedawca z Bruno. Urodzony i wychowany w miasteczku — chętnie opowie o okolicy, sąsiadach i codziennym życiu.",
+    "seller2.wa": "Napisz do Daniela",
+    "seller2.call": "Zadzwoń +351 932 855 243",
+    "seller2.linkedin": "Zobacz LinkedIn"
   },
   "el": {
     "nav.highlights": "Χαρακτηριστικά",
@@ -2363,11 +2408,16 @@
     "foot.lc3": "Ζωντανή αγγελία Airbnb",
     "foot.lc4": "Λήψη brochure (PDF)",
     "foot.disc": "Οι παρεχόμενες πληροφορίες είναι ενδεικτικές — επαληθεύστε με πλήρη τεκμηρίωση πριν την αγορά.",
-    "seller.kicker": "Γνωρίστε τον πωλητή",
+    "seller.kicker": "Γνωρίστε τους πωλητές",
     "seller.title": "Bruno Gouveia",
     "seller.body": "Ιδρυτής της eSIMpass. Έχτισα και λειτούργησα αυτό το ακίνητο ο ίδιος — τώρα πουλώ για να επικεντρωθώ στο επόμενο εγχείρημα. Ευχαρίστως να σας ξεναγήσω σε όλα προσωπικά, αυτοπροσώπως ή με βιντεοκλήση.",
     "seller.wa": "Στείλτε μήνυμα στον Bruno",
-    "seller.call": "Καλέστε +351 963 132 452"
+    "seller.call": "Καλέστε +351 963 132 452",
+    "seller2.title": "Daniel Batista",
+    "seller2.body": "Γεννημένος στην Anadia, συμπωλητής με τον Bruno. Μεγάλωσε στην πόλη — απαντά ευχαρίστως σε ό,τι αφορά την περιοχή, τη γειτονιά και την καθημερινή ζωή.",
+    "seller2.wa": "Στείλτε μήνυμα στον Daniel",
+    "seller2.call": "Καλέστε +351 932 855 243",
+    "seller2.linkedin": "Δείτε το LinkedIn"
   },
   "ja": {
     "nav.highlights": "特徴",
@@ -2604,7 +2654,12 @@
     "seller.title": "ブルーノ・グベイア",
     "seller.body": "eSIMpassの創設者。この物件は自分で建設し運営してきました — 次の事業に集中するため、今回売却します。対面またはビデオ通話で、すべてを直接ご案内できることを嬉しく思います。",
     "seller.wa": "ブルーノにメッセージ",
-    "seller.call": "電話 +351 963 132 452"
+    "seller.call": "電話 +351 963 132 452",
+    "seller2.title": "ダニエル・バティスタ",
+    "seller2.body": "アナディア出身、ブルーノと共同で売却。生まれも育ちもこの街で、エリア、ご近所、日々の暮らしについて何でもお答えします。",
+    "seller2.wa": "ダニエルに連絡",
+    "seller2.call": "電話 +351 932 855 243",
+    "seller2.linkedin": "LinkedInを見る"
   },
   "ar": {
     "nav.highlights": "المميزات",
@@ -2837,11 +2892,16 @@
     "foot.lc3": "إعلان Airbnb المباشر",
     "foot.lc4": "تحميل الكتيب (PDF)",
     "foot.disc": "المعلومات إرشادية — تحقق من الوثائق الكاملة قبل الشراء.",
-    "seller.kicker": "تعرف على البائع",
+    "seller.kicker": "تعرّف على البائعَين",
     "seller.title": "برونو غوفيا",
     "seller.body": "مؤسس eSIMpass. بنيت وشغّلت هذا العقار بنفسي — أبيع الآن للتركيز على المشروع التالي. يسعدني أن أشرح لك كل شيء شخصياً، حضورياً أو عبر مكالمة فيديو.",
     "seller.wa": "راسل برونو",
-    "seller.call": "اتصل +351 963 132 452"
+    "seller.call": "اتصل +351 963 132 452",
+    "seller2.title": "دانيال باتيستا",
+    "seller2.body": "من مواليد أناديا وشريك في البيع مع برونو. وُلد ونشأ في البلدة — يسعده أن يجيب عن أي سؤال يخص المنطقة والحي والحياة اليومية هنا.",
+    "seller2.wa": "مراسلة دانيال",
+    "seller2.call": "اتصل +351 932 855 243",
+    "seller2.linkedin": "عرض LinkedIn"
   },
   "no": {
     "nav.highlights": "Høydepunkter",
@@ -3074,11 +3134,16 @@
     "foot.lc3": "Live Airbnb-annonse",
     "foot.lc4": "Last ned brosjyre (PDF)",
     "foot.disc": "Informasjonen er veiledende — verifiser med full dokumentasjon før kjøp.",
-    "seller.kicker": "Møt selgeren",
+    "seller.kicker": "Møt selgerne",
     "seller.title": "Bruno Gouveia",
     "seller.body": "Grunnlegger av eSIMpass. Jeg bygde og drev denne eiendommen selv — selger nå for å fokusere på neste prosjekt. Gjerne en personlig gjennomgang, på stedet eller via videosamtale.",
     "seller.wa": "Skriv til Bruno",
-    "seller.call": "Ring +351 963 132 452"
+    "seller.call": "Ring +351 963 132 452",
+    "seller2.title": "Daniel Batista",
+    "seller2.body": "Født og oppvokst i Anadia, medselger sammen med Bruno. Svarer gjerne på alt om området, naboene og dagliglivet her.",
+    "seller2.wa": "Skriv til Daniel",
+    "seller2.call": "Ring +351 932 855 243",
+    "seller2.linkedin": "Se LinkedIn"
   },
   "sv": {
     "nav.highlights": "Höjdpunkter",
@@ -3311,11 +3376,16 @@
     "foot.lc3": "Live Airbnb-annons",
     "foot.lc4": "Ladda ner broschyr (PDF)",
     "foot.disc": "Information vägledande — verifiera med full dokumentation före köp.",
-    "seller.kicker": "Möt säljaren",
+    "seller.kicker": "Möt säljarna",
     "seller.title": "Bruno Gouveia",
     "seller.body": "Grundare av eSIMpass. Jag byggde och drev denna fastighet själv — säljer nu för att fokusera på nästa projekt. Glad att ge dig en personlig genomgång, på plats eller via videosamtal.",
     "seller.wa": "Skriv till Bruno",
-    "seller.call": "Ring +351 963 132 452"
+    "seller.call": "Ring +351 963 132 452",
+    "seller2.title": "Daniel Batista",
+    "seller2.body": "Född och uppvuxen i Anadia, medsäljare med Bruno. Svarar gärna på allt om området, grannarna och vardagslivet här.",
+    "seller2.wa": "Skriv till Daniel",
+    "seller2.call": "Ring +351 932 855 243",
+    "seller2.linkedin": "Se LinkedIn"
   },
   "da": {
     "nav.highlights": "Højdepunkter",
@@ -3548,11 +3618,16 @@
     "foot.lc3": "Live Airbnb-annonce",
     "foot.lc4": "Hent brochure (PDF)",
     "foot.disc": "Information vejledende — verificer med fuld dokumentation før køb.",
-    "seller.kicker": "Mød sælgeren",
+    "seller.kicker": "Mød sælgerne",
     "seller.title": "Bruno Gouveia",
     "seller.body": "Stifter af eSIMpass. Jeg byggede og drev denne ejendom selv — sælger nu for at fokusere på næste projekt. Glad for at give dig en personlig gennemgang, på stedet eller via videoopkald.",
     "seller.wa": "Skriv til Bruno",
-    "seller.call": "Ring +351 963 132 452"
+    "seller.call": "Ring +351 963 132 452",
+    "seller2.title": "Daniel Batista",
+    "seller2.body": "Født og opvokset i Anadia, medsælger med Bruno. Svarer gerne på alt om området, naboerne og hverdagen her.",
+    "seller2.wa": "Skriv til Daniel",
+    "seller2.call": "Ring +351 932 855 243",
+    "seller2.linkedin": "Se LinkedIn"
   },
   "nl": {
     "nav.highlights": "Hoogtepunten",
@@ -3785,11 +3860,16 @@
     "foot.lc3": "Live Airbnb-listing",
     "foot.lc4": "Brochure downloaden (PDF)",
     "foot.disc": "Verstrekte informatie is indicatief — verifieer met volledige documentatie voor aankoop.",
-    "seller.kicker": "Ontmoet de verkoper",
+    "seller.kicker": "Ontmoet de verkopers",
     "seller.title": "Bruno Gouveia",
     "seller.body": "Oprichter van eSIMpass. Ik bouwde en exploiteerde dit pand zelf — verkoop nu om me te focussen op de volgende onderneming. Graag persoonlijk een rondleiding, ter plaatse of via videogesprek.",
     "seller.wa": "Stuur Bruno een bericht",
-    "seller.call": "Bel +351 963 132 452"
+    "seller.call": "Bel +351 963 132 452",
+    "seller2.title": "Daniel Batista",
+    "seller2.body": "Geboren en getogen in Anadia, medeverkoper met Bruno. Beantwoordt graag al je vragen over de buurt, de bewoners en het dagelijks leven hier.",
+    "seller2.wa": "Stuur Daniel een bericht",
+    "seller2.call": "Bel +351 932 855 243",
+    "seller2.linkedin": "Bekijk LinkedIn"
   },
   "hu": {
     "nav.highlights": "Jellemzők",
@@ -4022,11 +4102,16 @@
     "foot.lc3": "Élő Airbnb hirdetés",
     "foot.lc4": "Brossúra letöltése (PDF)",
     "foot.disc": "A nyújtott információ tájékoztató jellegű — ellenőrizze a teljes dokumentációt vásárlás előtt.",
-    "seller.kicker": "Ismerje meg az eladót",
+    "seller.kicker": "Ismerje meg az eladókat",
     "seller.title": "Bruno Gouveia",
     "seller.body": "Az eSIMpass alapítója. Magam építettem és üzemeltettem ezt az ingatlant — most eladom, hogy a következő vállalkozásra fókuszáljak. Szívesen végigvezetem mindenen személyesen, helyszínen vagy videohíváson keresztül.",
     "seller.wa": "Üzenet Brunónak",
-    "seller.call": "Hívás +351 963 132 452"
+    "seller.call": "Hívás +351 963 132 452",
+    "seller2.title": "Daniel Batista",
+    "seller2.body": "Anadiai születésű, Bruno társeladója. Itt nőtt fel — szívesen mesél a környékről, a szomszédokról és a mindennapokról.",
+    "seller2.wa": "Üzenet Danielnek",
+    "seller2.call": "Hívás +351 932 855 243",
+    "seller2.linkedin": "LinkedIn megtekintése"
   },
   "bg": {
     "nav.highlights": "Акценти",
@@ -4259,11 +4344,16 @@
     "foot.lc3": "Обява в Airbnb на живо",
     "foot.lc4": "Изтегли брошурата (PDF)",
     "foot.disc": "Предоставената информация е индикативна — проверете пълната документация преди покупка.",
-    "seller.kicker": "Запознайте се с продавача",
+    "seller.kicker": "Запознайте се с продавачите",
     "seller.title": "Бруно Говея",
     "seller.body": "Основател на eSIMpass. Аз построих и управлявах този имот лично — сега продавам, за да се фокусирам върху следващото начинание. С удоволствие ще ви разведа лично, на място или чрез видеообаждане.",
     "seller.wa": "Пишете на Бруно",
-    "seller.call": "Обадете се +351 963 132 452"
+    "seller.call": "Обадете се +351 963 132 452",
+    "seller2.title": "Даниел Батища",
+    "seller2.body": "Роден в Анадия, съвместен продавач с Бруно. Израснал е в града — с удоволствие ще отговори на всичко за района, съседите и ежедневието тук.",
+    "seller2.wa": "Пишете на Даниел",
+    "seller2.call": "Обадете се +351 932 855 243",
+    "seller2.linkedin": "Виж LinkedIn"
   },
   "ro": {
     "nav.highlights": "Caracteristici",
@@ -4496,10 +4586,15 @@
     "foot.lc3": "Anunț Airbnb live",
     "foot.lc4": "Descarcă broșura (PDF)",
     "foot.disc": "Informațiile sunt orientative — verifică documentația completă înainte de cumpărare.",
-    "seller.kicker": "Cunoaște vânzătorul",
+    "seller.kicker": "Cunoaște vânzătorii",
     "seller.title": "Bruno Gouveia",
     "seller.body": "Fondator al eSIMpass. Am construit și operat această proprietate eu însumi — vând acum pentru a mă concentra pe următorul proiect. Cu plăcere îți voi face un tur personal, la fața locului sau prin apel video.",
     "seller.wa": "Trimite mesaj lui Bruno",
-    "seller.call": "Sună +351 963 132 452"
+    "seller.call": "Sună +351 963 132 452",
+    "seller2.title": "Daniel Batista",
+    "seller2.body": "Originar din Anadia, co-vânzător cu Bruno. Născut și crescut în oraș — răspunde cu plăcere la orice întrebare despre zonă, vecini și viața de zi cu zi.",
+    "seller2.wa": "Trimite mesaj lui Daniel",
+    "seller2.call": "Sună +351 932 855 243",
+    "seller2.linkedin": "Vezi LinkedIn"
   }
 }
