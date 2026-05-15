@@ -784,6 +784,16 @@ p  { margin: 0 0 1em; color: var(--ink-soft); }
   border: 1px solid var(--line);
 }
 .floor__plan img { width: 100%; height: auto; border-radius: 6px; }
+.floor__plan picture { display: block; }
+/* Wide variant: full-width plans (overall + T3) */
+.floor--full .floor__plan--wide {
+  grid-row: auto;
+  grid-column: 1 / -1;
+  margin: 18px 0 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .floor__list {
   list-style: none; padding: 0; margin: 16px 0 0;
   display: grid; gap: 8px;

@@ -489,6 +489,17 @@
 
       <!-- Floor plans -->
       <div class="floors">
+        <article class="floor floor--full">
+          <header class="floor__head">
+            <span class="floor__tag" data-i18n="floorOverall.tag">Overall plan</span>
+            <h3 data-i18n="floorOverall.title">Full property layout</h3>
+            <p data-i18n="floorOverall.lead">Architectural plan of the entire 393 m² building, including all unit positions, common areas and the surrounding garden.</p>
+          </header>
+          <div class="floor__plan floor__plan--wide">
+            <picture><source srcset="/images/floorplan-overall.webp" type="image/webp"><img src="/images/floorplan-overall.jpg" alt="Overall property plan" loading="lazy" decoding="async" width="1034" height="1200"></picture>
+          </div>
+        </article>
+
         <article class="floor">
           <header class="floor__head">
             <span class="floor__tag" data-i18n="floor1.tag">Földszint</span>
@@ -496,7 +507,7 @@
             <p data-i18n="floor1.lead">Két független lakosztály fürdőszobával, egy stúdió (T0) saját fürdőszobával és önálló bejárattal, plusz egy lakosztály saját fürdőszobával és önálló bejárattal. Közös nappali, konyha és mosókonyha.</p>
           </header>
           <div class="floor__plan">
-            <picture><source srcset="/images/floorplan-ground.webp" type="image/webp"><img src="/images/floorplan-ground.jpg" alt="Ground floor plan" loading="lazy" decoding="async" width="900" height="1636"></picture>
+            <picture><source srcset="/images/floorplan-ground.webp" type="image/webp"><img src="/images/floorplan-ground.jpg" alt="Ground floor plan — common areas + rooms" loading="lazy" decoding="async" width="814" height="1200"></picture>
           </div>
           <ul class="floor__list">
             <li data-i18n="floor1.li1">Két lakosztály saját fürdőszobával</li>
@@ -508,19 +519,51 @@
 
         <article class="floor">
           <header class="floor__head">
+            <span class="floor__tag floor__tag--alt" data-i18n="floorT0.tag">T0 + Suite</span>
+            <h3 data-i18n="floorT0.title">Independent T0 studio + en-suite room</h3>
+            <p data-i18n="floorT0.lead">The T0 studio (N°8) and Suite N°9 — both with private bathroom and a separate entrance to the rear garden.</p>
+          </header>
+          <div class="floor__plan">
+            <picture><source srcset="/images/floorplan-t0-suite.webp" type="image/webp"><img src="/images/floorplan-t0-suite.jpg" alt="T0 studio + Suite N°9 plan" loading="lazy" decoding="async" width="966" height="1200"></picture>
+          </div>
+          <ul class="floor__list">
+            <li data-i18n="floorT0.li1">T0 studio (N°8) with private kitchenette</li>
+            <li data-i18n="floorT0.li2">Suite N°9 with private bathroom</li>
+            <li data-i18n="floorT0.li3">Independent entrance via rear garden</li>
+          </ul>
+        </article>
+
+        <article class="floor">
+          <header class="floor__head">
             <span class="floor__tag floor__tag--alt" data-i18n="floor2.tag">Első emelet</span>
             <h3 data-i18n="floor2.title">Tulajdonosi T3 + 6 jövedelmi egység</h3>
             <p data-i18n="floor2.lead">A tulajdonosi T3 önálló bejárattal és terasszal rendelkezik. Plusz egy T1 konyhával, négy ensuite hálószoba két erkéllyel, és három további lakosztály — mind közös nappalit és konyhát osztanak meg.</p>
           </header>
           <div class="floor__plan">
-            <picture><source srcset="/images/floorplan-first.webp" type="image/webp"><img src="/images/floorplan-first.jpg" alt="First floor plan" loading="lazy" decoding="async" width="900" height="1636"></picture>
+            <picture><source srcset="/images/floorplan-first.webp" type="image/webp"><img src="/images/floorplan-first.jpg" alt="First floor plan — rooms + T1" loading="lazy" decoding="async" width="775" height="1200"></picture>
           </div>
           <ul class="floor__list">
-            <li data-i18n-html="floor2.li1"><strong>T3 terasszal + 2 fürdőszoba</strong> (önálló bejárat, tulajdonosi egység)</strong> (independent entrance, owner unit)</li>
+            <li data-i18n-html="floor2.li1"><strong>T3 terasszal + 2 fürdőszoba</strong> (önálló bejárat, tulajdonosi egység)</strong> — independent apartment with kitchen and private bathroom</li>
             <li data-i18n="floor2.li2">T1 saját fürdőszobával és konyhával</li>
             <li data-i18n="floor2.li3">Négy lakosztály saját fürdőszobával + két erkéllyel</li>
-            <li data-i18n="floor2.li4">Három lakosztály két fürdőszobával</li>
             <li data-i18n="floor2.li5">Közös nappali + konyha</li>
+          </ul>
+        </article>
+
+        <article class="floor floor--full">
+          <header class="floor__head">
+            <span class="floor__tag" data-i18n="floorT3.tag">Owner T3</span>
+            <h3 data-i18n="floorT3.title">T3 owner unit — terrace, lounge, 3 bedrooms</h3>
+            <p data-i18n="floorT3.lead">The private T3 of the owner — independent entrance, terrace, lounge, kitchen, two bathrooms and three bedrooms (T3 N°10, N°11, N°12).</p>
+          </header>
+          <div class="floor__plan floor__plan--wide">
+            <picture><source srcset="/images/floorplan-t3-owner.webp" type="image/webp"><img src="/images/floorplan-t3-owner.jpg" alt="Owner T3 plan with terrace" loading="lazy" decoding="async" width="1200" height="1073"></picture>
+          </div>
+          <ul class="floor__list floor__list--row">
+            <li data-i18n="floorT3.li1">🛋️ Lounge + dining + kitchen</li>
+            <li data-i18n="floorT3.li2">🛏️ Three bedrooms (N°10, N°11, N°12)</li>
+            <li data-i18n="floorT3.li3">🛁 Two bathrooms</li>
+            <li data-i18n="floorT3.li4">🌳 Private terrace + independent entrance</li>
           </ul>
         </article>
 

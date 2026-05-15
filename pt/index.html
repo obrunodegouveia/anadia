@@ -489,38 +489,81 @@
 
       <!-- Floor plans -->
       <div class="floors">
+        <article class="floor floor--full">
+          <header class="floor__head">
+            <span class="floor__tag" data-i18n="floorOverall.tag">Planta geral</span>
+            <h3 data-i18n="floorOverall.title">Layout completo da propriedade</h3>
+            <p data-i18n="floorOverall.lead">Planta arquitetónica do edifício completo de 393 m², incluindo todas as posições das unidades, áreas comuns e jardim circundante.</p>
+          </header>
+          <div class="floor__plan floor__plan--wide">
+            <picture><source srcset="/images/floorplan-overall.webp" type="image/webp"><img src="/images/floorplan-overall.jpg" alt="Overall property plan" loading="lazy" decoding="async" width="1034" height="1200"></picture>
+          </div>
+        </article>
+
         <article class="floor">
           <header class="floor__head">
             <span class="floor__tag" data-i18n="floor1.tag">Rés-do-chão</span>
-            <h3 data-i18n="floor1.title">Áreas comuns + 4 unidades de rendimento</h3>
-            <p data-i18n="floor1.lead">T0 com casa de banho privativa e entrada independente, mais quartos com casas de banho partilhadas. Sala comum, cozinha e lavandaria.</p>
+            <h3 data-i18n="floor1.title">Áreas comuns + quartos</h3>
+            <p data-i18n="floor1.lead">Cozinha e sala de jantar partilhadas, duas casas de banho, e quartos (Quartos N°1/3, N°2 e N°4) no rés-do-chão.</p>
           </header>
           <div class="floor__plan">
-            <picture><source srcset="/images/floorplan-ground.webp" type="image/webp"><img src="/images/floorplan-ground.jpg" alt="Planta do rés-do-chão" loading="lazy" decoding="async" width="900" height="1636"></picture>
+            <picture><source srcset="/images/floorplan-ground.webp" type="image/webp"><img src="/images/floorplan-ground.jpg" alt="Ground floor plan — common areas + rooms" loading="lazy" decoding="async" width="814" height="1200"></picture>
           </div>
           <ul class="floor__list">
-            <li data-i18n="floor1.li1">Duas suítes com casa de banho privativa</li>
-            <li data-i18n="floor1.li2">Um T0 com casa de banho privativa + entrada independente</li>
-            <li data-i18n="floor1.li3">Uma suíte com casa de banho privativa + entrada independente</li>
-            <li data-i18n="floor1.li4">Sala comum + cozinha + lavandaria</li>
+            <li data-i18n="floor1.li1">Cozinha partilhada totalmente equipada</li>
+            <li data-i18n="floor1.li2">Duas casas de banho ao serviço dos quartos</li>
+            <li data-i18n="floor1.li3">Três quartos (Quartos N°1/3, N°2, N°4)</li>
+            <li data-i18n="floor1.li4">Circulação central + escadas</li>
+          </ul>
+        </article>
+
+        <article class="floor">
+          <header class="floor__head">
+            <span class="floor__tag floor__tag--alt" data-i18n="floorT0.tag">T0 + Suíte</span>
+            <h3 data-i18n="floorT0.title">T0 independente + suíte com casa de banho privativa</h3>
+            <p data-i18n="floorT0.lead">O estúdio T0 (N°8) e a Suíte N°9 — ambos com casa de banho privativa e entrada separada para o jardim traseiro.</p>
+          </header>
+          <div class="floor__plan">
+            <picture><source srcset="/images/floorplan-t0-suite.webp" type="image/webp"><img src="/images/floorplan-t0-suite.jpg" alt="T0 studio + Suite N°9 plan" loading="lazy" decoding="async" width="966" height="1200"></picture>
+          </div>
+          <ul class="floor__list">
+            <li data-i18n="floorT0.li1">T0 (N°8) com kitchenette privativa</li>
+            <li data-i18n="floorT0.li2">Suíte N°9 com casa de banho privativa</li>
+            <li data-i18n="floorT0.li3">Entrada independente via jardim traseiro</li>
           </ul>
         </article>
 
         <article class="floor">
           <header class="floor__head">
             <span class="floor__tag floor__tag--alt" data-i18n="floor2.tag">1º andar</span>
-            <h3 data-i18n="floor2.title">T3 do proprietário + 6 unidades de rendimento</h3>
-            <p data-i18n="floor2.lead">O T3 do proprietário tem entrada independente e terraço. Mais um T1 com cozinha e quartos — partilhando sala e cozinha comum.</p>
+            <h3 data-i18n="floor2.title">Quartos + apartamento T1</h3>
+            <p data-i18n="floor2.lead">Quatro quartos (Quartos N°13, N°14, N°15, N°16) e o apartamento T1 (N°17) com casa de banho privativa e cozinha.</p>
           </header>
           <div class="floor__plan">
-            <picture><source srcset="/images/floorplan-first.webp" type="image/webp"><img src="/images/floorplan-first.jpg" alt="Planta do 1º andar" loading="lazy" decoding="async" width="900" height="1636"></picture>
+            <picture><source srcset="/images/floorplan-first.webp" type="image/webp"><img src="/images/floorplan-first.jpg" alt="First floor plan — rooms + T1" loading="lazy" decoding="async" width="775" height="1200"></picture>
           </div>
           <ul class="floor__list">
-            <li data-i18n-html="floor2.li1"><strong>T3 com terraço + 2 casas de banho</strong> (entrada independente, unidade do proprietário)</strong> (independent entrance, owner unit)</li>
-            <li data-i18n="floor2.li2">T1 com casa de banho privativa e cozinha</li>
-            <li data-i18n="floor2.li3">Quatro suítes com casa de banho privativa + duas varandas</li>
-            <li data-i18n="floor2.li4">Três suítes com duas casas de banho</li>
-            <li data-i18n="floor2.li5">Área comum + cozinha</li>
+            <li data-i18n-html="floor2.li1"><strong>T1 (N°17)</strong> — apartamento independente com cozinha e casa de banho privativa</strong> — independent apartment with kitchen and private bathroom</li>
+            <li data-i18n="floor2.li2">Quatro quartos (Quartos N°13, N°14, N°15, N°16)</li>
+            <li data-i18n="floor2.li3">Casas de banho privativas em cada quarto</li>
+            <li data-i18n="floor2.li5">Circulação central + escadas</li>
+          </ul>
+        </article>
+
+        <article class="floor floor--full">
+          <header class="floor__head">
+            <span class="floor__tag" data-i18n="floorT3.tag">T3 do proprietário</span>
+            <h3 data-i18n="floorT3.title">T3 do proprietário — terraço, sala, 3 quartos</h3>
+            <p data-i18n="floorT3.lead">O T3 privado do proprietário — entrada independente, terraço, sala, cozinha, duas casas de banho e três quartos (T3 N°10, N°11, N°12).</p>
+          </header>
+          <div class="floor__plan floor__plan--wide">
+            <picture><source srcset="/images/floorplan-t3-owner.webp" type="image/webp"><img src="/images/floorplan-t3-owner.jpg" alt="Owner T3 plan with terrace" loading="lazy" decoding="async" width="1200" height="1073"></picture>
+          </div>
+          <ul class="floor__list floor__list--row">
+            <li data-i18n="floorT3.li1">🛋️ Sala + sala de jantar + cozinha</li>
+            <li data-i18n="floorT3.li2">🛏️ Três quartos (N°10, N°11, N°12)</li>
+            <li data-i18n="floorT3.li3">🛁 Duas casas de banho</li>
+            <li data-i18n="floorT3.li4">🌳 Terraço privado + entrada independente</li>
           </ul>
         </article>
 
