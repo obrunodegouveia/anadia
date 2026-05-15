@@ -191,15 +191,14 @@ HEAD_TMPL = '''<!DOCTYPE html>
         <span class="nav__brand-text">Vila&nbsp;Anadia</span>
       </a>
       <div class="nav__panel" id="navPanel">
-        <button class="nav__close" id="navClose" aria-label="Fechar menu" type="button">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
-        </button>
         <nav class="nav__links" aria-label="Principal">
           <a href="/pt/#highlights">Destaques</a>
           <a href="/pt/#investment">Investimento</a>
           <a href="/pt/#layout">Planta</a>
           <a href="/pt/alojamento-anadia/">Alojamento</a>
           <a href="/pt/atracoes/" class="is-active">Atrações</a>
+          <a href="/pt/#sellers">Vendedores</a>
+          <a href="/pt/#contact">Contacto</a>
         </nav>
         <a href="/pt/#contact" class="btn btn--primary nav__cta">Pedir Informação</a>
       </div>

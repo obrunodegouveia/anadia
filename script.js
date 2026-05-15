@@ -149,7 +149,6 @@ initI18n();
 // =================== Mobile drawer ===================
 const nav         = document.getElementById('nav');
 const toggle      = document.getElementById('navToggle');
-const navClose    = document.getElementById('navClose');
 const navBackdrop = document.getElementById('navBackdrop');
 const navPanel    = document.getElementById('navPanel');
 
@@ -175,7 +174,6 @@ function toggleDrawer() {
 }
 
 toggle?.addEventListener('click', toggleDrawer);
-navClose?.addEventListener('click', closeDrawer);
 navBackdrop?.addEventListener('click', closeDrawer);
 
 // Close on link / CTA click

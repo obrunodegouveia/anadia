@@ -254,7 +254,9 @@
     "floorT3.li2": "🛏️ Three bedrooms (N°10, N°11, N°12)",
     "floorT3.li3": "🛁 Two bathrooms",
     "floorT3.li4": "🌳 Private terrace + independent entrance",
-    "seller2.badge": "Main contact"
+    "seller2.badge": "Main contact",
+    "nav.sellers": "Sellers",
+    "nav.contact": "Contact"
   },
   "pt": {
     "nav.highlights": "Destaques",
@@ -511,7 +513,9 @@
     "floorT3.li2": "🛏️ Três quartos (N°10, N°11, N°12)",
     "floorT3.li3": "🛁 Duas casas de banho",
     "floorT3.li4": "🌳 Terraço privado + entrada independente",
-    "seller2.badge": "Contacto principal"
+    "seller2.badge": "Contacto principal",
+    "nav.sellers": "Vendedores",
+    "nav.contact": "Contacto"
   },
   "de": {
     "nav.highlights": "Highlights",
@@ -768,7 +772,9 @@
     "floorT3.li2": "🛏️ Three bedrooms (N°10, N°11, N°12)",
     "floorT3.li3": "🛁 Two bathrooms",
     "floorT3.li4": "🌳 Private terrace + independent entrance",
-    "seller2.badge": "Hauptkontakt"
+    "seller2.badge": "Hauptkontakt",
+    "nav.sellers": "Verkäufer",
+    "nav.contact": "Kontakt"
   },
   "fr": {
     "nav.highlights": "Points forts",
@@ -1025,7 +1031,9 @@
     "floorT3.li2": "🛏️ Three bedrooms (N°10, N°11, N°12)",
     "floorT3.li3": "🛁 Two bathrooms",
     "floorT3.li4": "🌳 Private terrace + independent entrance",
-    "seller2.badge": "Contact principal"
+    "seller2.badge": "Contact principal",
+    "nav.sellers": "Vendeurs",
+    "nav.contact": "Contact"
   },
   "es": {
     "nav.highlights": "Destacados",
@@ -1282,7 +1290,9 @@
     "floorT3.li2": "🛏️ Three bedrooms (N°10, N°11, N°12)",
     "floorT3.li3": "🛁 Two bathrooms",
     "floorT3.li4": "🌳 Private terrace + independent entrance",
-    "seller2.badge": "Contacto principal"
+    "seller2.badge": "Contacto principal",
+    "nav.sellers": "Vendedores",
+    "nav.contact": "Contacto"
   },
   "ru": {
     "nav.highlights": "Преимущества",
@@ -1539,7 +1549,9 @@
     "floorT3.li2": "🛏️ Three bedrooms (N°10, N°11, N°12)",
     "floorT3.li3": "🛁 Two bathrooms",
     "floorT3.li4": "🌳 Private terrace + independent entrance",
-    "seller2.badge": "Главный контакт"
+    "seller2.badge": "Главный контакт",
+    "nav.sellers": "Продавцы",
+    "nav.contact": "Контакт"
   },
   "uk": {
     "nav.highlights": "Переваги",
@@ -1796,7 +1808,9 @@
     "floorT3.li2": "🛏️ Three bedrooms (N°10, N°11, N°12)",
     "floorT3.li3": "🛁 Two bathrooms",
     "floorT3.li4": "🌳 Private terrace + independent entrance",
-    "seller2.badge": "Головний контакт"
+    "seller2.badge": "Головний контакт",
+    "nav.sellers": "Продавці",
+    "nav.contact": "Контакт"
   },
   "it": {
     "nav.highlights": "Punti forti",
@@ -2053,7 +2067,9 @@
     "floorT3.li2": "🛏️ Three bedrooms (N°10, N°11, N°12)",
     "floorT3.li3": "🛁 Two bathrooms",
     "floorT3.li4": "🌳 Private terrace + independent entrance",
-    "seller2.badge": "Contatto principale"
+    "seller2.badge": "Contatto principale",
+    "nav.sellers": "Venditori",
+    "nav.contact": "Contatto"
   },
   "pl": {
     "nav.highlights": "Najważniejsze",
@@ -2310,7 +2326,9 @@
     "floorT3.li2": "🛏️ Three bedrooms (N°10, N°11, N°12)",
     "floorT3.li3": "🛁 Two bathrooms",
     "floorT3.li4": "🌳 Private terrace + independent entrance",
-    "seller2.badge": "Główny kontakt"
+    "seller2.badge": "Główny kontakt",
+    "nav.sellers": "Sprzedawcy",
+    "nav.contact": "Kontakt"
   },
   "el": {
     "nav.highlights": "Χαρακτηριστικά",
@@ -2567,7 +2585,9 @@
     "floorT3.li2": "🛏️ Three bedrooms (N°10, N°11, N°12)",
     "floorT3.li3": "🛁 Two bathrooms",
     "floorT3.li4": "🌳 Private terrace + independent entrance",
-    "seller2.badge": "Κύρια επαφή"
+    "seller2.badge": "Κύρια επαφή",
+    "nav.sellers": "Πωλητές",
+    "nav.contact": "Επικοινωνία"
   },
   "ja": {
     "nav.highlights": "特徴",
@@ -2824,7 +2844,9 @@
     "floorT3.li2": "🛏️ Three bedrooms (N°10, N°11, N°12)",
     "floorT3.li3": "🛁 Two bathrooms",
     "floorT3.li4": "🌳 Private terrace + independent entrance",
-    "seller2.badge": "メイン連絡先"
+    "seller2.badge": "メイン連絡先",
+    "nav.sellers": "売主",
+    "nav.contact": "連絡先"
   },
   "ar": {
     "nav.highlights": "المميزات",
@@ -3081,7 +3103,9 @@
     "floorT3.li2": "🛏️ Three bedrooms (N°10, N°11, N°12)",
     "floorT3.li3": "🛁 Two bathrooms",
     "floorT3.li4": "🌳 Private terrace + independent entrance",
-    "seller2.badge": "جهة الاتصال الرئيسية"
+    "seller2.badge": "جهة الاتصال الرئيسية",
+    "nav.sellers": "البائعون",
+    "nav.contact": "اتصال"
   },
   "no": {
     "nav.highlights": "Høydepunkter",
@@ -3338,7 +3362,9 @@
     "floorT3.li2": "🛏️ Three bedrooms (N°10, N°11, N°12)",
     "floorT3.li3": "🛁 Two bathrooms",
     "floorT3.li4": "🌳 Private terrace + independent entrance",
-    "seller2.badge": "Hovedkontakt"
+    "seller2.badge": "Hovedkontakt",
+    "nav.sellers": "Selgere",
+    "nav.contact": "Kontakt"
   },
   "sv": {
     "nav.highlights": "Höjdpunkter",
@@ -3595,7 +3621,9 @@
     "floorT3.li2": "🛏️ Three bedrooms (N°10, N°11, N°12)",
     "floorT3.li3": "🛁 Two bathrooms",
     "floorT3.li4": "🌳 Private terrace + independent entrance",
-    "seller2.badge": "Huvudkontakt"
+    "seller2.badge": "Huvudkontakt",
+    "nav.sellers": "Säljare",
+    "nav.contact": "Kontakt"
   },
   "da": {
     "nav.highlights": "Højdepunkter",
@@ -3852,7 +3880,9 @@
     "floorT3.li2": "🛏️ Three bedrooms (N°10, N°11, N°12)",
     "floorT3.li3": "🛁 Two bathrooms",
     "floorT3.li4": "🌳 Private terrace + independent entrance",
-    "seller2.badge": "Hovedkontakt"
+    "seller2.badge": "Hovedkontakt",
+    "nav.sellers": "Sælgere",
+    "nav.contact": "Kontakt"
   },
   "nl": {
     "nav.highlights": "Hoogtepunten",
@@ -4109,7 +4139,9 @@
     "floorT3.li2": "🛏️ Three bedrooms (N°10, N°11, N°12)",
     "floorT3.li3": "🛁 Two bathrooms",
     "floorT3.li4": "🌳 Private terrace + independent entrance",
-    "seller2.badge": "Hoofdcontact"
+    "seller2.badge": "Hoofdcontact",
+    "nav.sellers": "Verkopers",
+    "nav.contact": "Contact"
   },
   "hu": {
     "nav.highlights": "Jellemzők",
@@ -4366,7 +4398,9 @@
     "floorT3.li2": "🛏️ Three bedrooms (N°10, N°11, N°12)",
     "floorT3.li3": "🛁 Two bathrooms",
     "floorT3.li4": "🌳 Private terrace + independent entrance",
-    "seller2.badge": "Fő kapcsolattartó"
+    "seller2.badge": "Fő kapcsolattartó",
+    "nav.sellers": "Eladók",
+    "nav.contact": "Kapcsolat"
   },
   "bg": {
     "nav.highlights": "Акценти",
@@ -4623,7 +4657,9 @@
     "floorT3.li2": "🛏️ Three bedrooms (N°10, N°11, N°12)",
     "floorT3.li3": "🛁 Two bathrooms",
     "floorT3.li4": "🌳 Private terrace + independent entrance",
-    "seller2.badge": "Основен контакт"
+    "seller2.badge": "Основен контакт",
+    "nav.sellers": "Продавачи",
+    "nav.contact": "Контакт"
   },
   "ro": {
     "nav.highlights": "Caracteristici",
@@ -4880,6 +4916,8 @@
     "floorT3.li2": "🛏️ Three bedrooms (N°10, N°11, N°12)",
     "floorT3.li3": "🛁 Two bathrooms",
     "floorT3.li4": "🌳 Private terrace + independent entrance",
-    "seller2.badge": "Contact principal"
+    "seller2.badge": "Contact principal",
+    "nav.sellers": "Vânzători",
+    "nav.contact": "Contact"
   }
 }

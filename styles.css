@@ -355,7 +355,6 @@ p  { margin: 0 0 1em; color: var(--ink-soft); }
 
 /* Drawer panel — desktop: passes children through; mobile: slide-out drawer */
 .nav__panel { display: contents; }
-.nav__close { display: none; }
 .nav__backdrop {
   position: fixed; inset: 0;
   background: rgba(15, 27, 45, 0.55);
@@ -1304,21 +1303,6 @@ p  { margin: 0 0 1em; color: var(--ink-soft); }
     will-change: transform;
   }
   .nav.is-open .nav__panel { transform: translateX(0); }
-
-  .nav__close {
-    display: grid;
-    place-items: center;
-    position: absolute;
-    top: 16px; right: 16px;
-    width: 40px; height: 40px;
-    border-radius: 50%;
-    border: none;
-    background: var(--bg-soft);
-    color: var(--ink);
-    cursor: pointer;
-    transition: background .15s, transform .15s;
-  }
-  .nav__close:hover { background: var(--ink); color: #fff; transform: scale(1.05); }
 
   .nav__links {
     flex-direction: column;
