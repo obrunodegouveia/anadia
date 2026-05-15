@@ -1519,19 +1519,6 @@ body.is-nav-open { overflow: hidden; }
   box-shadow: 0 8px 24px rgba(184,137,90,0.12);
 }
 .seller__photo { position: relative; }
-.seller__badge {
-  position: absolute;
-  top: -8px; left: 50%; transform: translateX(-50%);
-  background: var(--accent);
-  color: #fff;
-  font-size: .65rem;
-  font-weight: 700;
-  letter-spacing: .12em;
-  text-transform: uppercase;
-  padding: 4px 12px;
-  border-radius: 999px;
-  white-space: nowrap;
-}
 
 .seller {
   background: var(--bg-soft);
