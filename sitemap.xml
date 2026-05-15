@@ -49,4 +49,10 @@
   <url><loc>https://vilaanadia.com/hu/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://vilaanadia.com/bg/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
   <url><loc>https://vilaanadia.com/ro/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://vilaanadia.com/pt/atracoes/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://vilaanadia.com/pt/atracoes/vinhos-bairrada/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://vilaanadia.com/pt/atracoes/curia-termas/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://vilaanadia.com/pt/atracoes/desporto-car-anadia/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://vilaanadia.com/pt/atracoes/gastronomia-leitao/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://vilaanadia.com/pt/atracoes/cidades-praias/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>

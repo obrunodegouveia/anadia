@@ -1494,6 +1494,123 @@ p  { margin: 0 0 1em; color: var(--ink-soft); }
   .seller__contact { justify-content: center; }
 }
 
+/* ==================== SUB-PAGES (/pt/atracoes/*) ==================== */
+.subpage-hero {
+  padding: 60px 0 28px;
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
+}
+.subpage-hero h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin: 8px 0 16px;
+}
+.subpage-hero__lead {
+  font-size: 1.05rem;
+  max-width: 720px;
+  color: var(--ink-soft);
+}
+.breadcrumb {
+  font-size: .82rem;
+  color: var(--muted);
+  margin-bottom: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+.breadcrumb a { color: var(--ink-soft); text-decoration: underline; text-decoration-color: rgba(0,0,0,.15); text-underline-offset: 2px; }
+.breadcrumb a:hover { color: var(--ink); }
+.breadcrumb .current { color: var(--ink); font-weight: 500; }
+.breadcrumb span { color: var(--line-strong); }
+
+.subpage-content { max-width: 760px; }
+.subpage-content h2 {
+  font-size: 1.45rem;
+  margin: 36px 0 12px;
+}
+.subpage-content h2:first-child { margin-top: 0; }
+.subpage-content p, .subpage-content ul {
+  font-size: 1rem;
+  color: var(--ink-soft);
+  margin: 0 0 14px;
+}
+.subpage-content ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+.subpage-content li { margin-bottom: 6px; }
+.subpage-content a {
+  color: var(--accent-deep);
+  text-decoration: underline;
+  text-decoration-color: rgba(184,137,90,.3);
+  text-underline-offset: 2px;
+}
+.subpage-content a:hover { color: var(--ink); }
+
+/* Hub cards (atracoes/index) */
+.attractions__hub {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+.hub-card {
+  display: block;
+  padding: 24px 26px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  transition: transform .15s, box-shadow .15s, border-color .15s;
+  color: inherit;
+}
+.hub-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  border-color: var(--accent);
+}
+.hub-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+  color: var(--ink);
+}
+.hub-card p {
+  margin: 0;
+  font-size: .92rem;
+  color: var(--ink-soft);
+}
+@media (max-width: 700px) {
+  .attractions__hub { grid-template-columns: 1fr; }
+}
+
+/* Sub-page CTA back to property */
+.subpage-cta {
+  margin-top: 48px;
+  padding: 28px 32px;
+  background: var(--ink);
+  color: #fff;
+  border-radius: var(--radius);
+  text-align: center;
+}
+.subpage-cta h3 { color: #fff; margin-bottom: 8px; font-size: 1.2rem; }
+.subpage-cta p  { color: rgba(255,255,255,.78); margin-bottom: 16px; font-size: .95rem; }
+.subpage-cta .btn--primary { background: var(--accent); }
+.subpage-cta .btn--primary:hover { background: var(--accent-deep); }
+
+/* Related pages list */
+.related-pages {
+  margin-top: 36px;
+  padding: 22px 26px;
+  background: var(--bg-soft);
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+}
+.related-pages h4 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+  color: var(--ink);
+}
+.related-pages ul { margin: 0; padding-left: 20px; }
+.related-pages li { font-size: .95rem; }
+
 /* ==================== ATTRACTIONS (PT-only section) ==================== */
 .attractions__group {
   background: var(--surface);
